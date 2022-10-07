@@ -12,7 +12,7 @@ body {
   font-family: 'Montserrat', 'Seymour One', sans-serif;
   background-color: $backgroundColor;
   color: $mainColorText;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0.03em;
 }
 
@@ -35,4 +35,9 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
 }
