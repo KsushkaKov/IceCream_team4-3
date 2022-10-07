@@ -1,0 +1,13 @@
+.header__list {
+    @media screen and (max-width: 1199px) {
+        display: none;
+      }
+}
+.header__button{
+    @media screen and (max-width: 767px) {
+        display: none;
+      }
+}
+.logo {
+    display: flex;
+}
