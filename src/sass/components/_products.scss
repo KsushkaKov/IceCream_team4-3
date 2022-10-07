@@ -1,0 +1,252 @@
+.products {
+  padding-top: 60px;
+  margin-bottom: 60px;
+}
+
+.products__label {
+  font-family: 'Montserrat';
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.21;
+  text-align: center;
+  text-transform: uppercase;
+  color: $secondaryColorText;
+  margin-bottom: 12px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 22px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 30px;
+    letter-spacing: 0.04em;
+  }
+}
+
+.products__title {
+  font-family: 'Seymour One';
+  font-size: 30px;
+  line-height: 1.26;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  color: $secondaryColorText;
+  margin-bottom: 148px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 34px;
+    margin-bottom: 200px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 36px;
+    letter-spacing: 0.06em;
+    line-height: 1.13;
+    margin-bottom: 303px;
+  }
+}
+
+.products__list {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    gap: 32px;
+  }
+}
+
+.products__item {
+  width: 280px;
+  height: 100%;
+  padding-top: 123px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  border-radius: 24px;
+
+  @media screen and (min-width: $tablet) {
+    width: 224px;
+    flex-basis: calc((100% - 48px) / 3);
+    padding-top: 107px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 370px;
+    flex-basis: calc((100% - 96px) / 3);
+    padding-top: 166px;
+  }
+
+  &:nth-child(1) {
+    background-color: $firstCardColor;
+    margin-bottom: 164px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 0px;
+    }
+
+    &::before {
+      content: '';
+      background-image: url(..//images/products/products_1s@1x.png);
+      width: 201px;
+      height: 211px;
+      background-size: cover;
+      position: absolute;
+      top: -140px;
+      display: block;
+      @include retina {
+        background-image: url(..//images/products/products_1s@2x.png);
+      }
+
+      @media screen and (min-width: $tablet) {
+        width: 200px;
+        height: 208px;
+        background-image: url(..//images/products/products_1m@1x.png);
+        @include retina {
+          background-image: url(..//images/products/products_1m@2x.png);
+        }
+      }
+
+      @media screen and (min-width: $desktop) {
+        width: 302px;
+        height: 316px;
+        top: -261px;
+        background-image: url(..//images/products/products_1l@1x.png);
+        @include retina {
+          background-image: url(..//images/products/products_1l@2x.png);
+        }
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    background-color: $secondCardColor;
+    margin-bottom: 140px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 0px;
+    }
+
+    &::before {
+      content: '';
+      background-image: url(..//images/products/products_1m@1x.png);
+      width: 280px;
+      height: 280px;
+      background-size: cover;
+      position: absolute;
+      top: -140px;
+      @include retina {
+        background-image: url(..//images/products/products_1m@2x.png);
+      }
+
+      @media screen and (min-width: $tablet) {
+        width: 224px;
+        height: 224px;
+        top: -138px;
+        background-image: url(..//images/products/products_2m@1x.png);
+        @include retina {
+          background-image: url(..//images/products/products_2m@2x.png);
+        }
+      }
+
+      @media screen and (min-width: $desktop) {
+        width: 368px;
+        height: 394px;
+        top: -261px;
+        background-image: url(..//images/products/products_3m@1x.png);
+        @include retina {
+          background-image: url(..//images/products/products_3m@2x.png);
+        }
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    background-color: $thirdCardColor;
+
+    &::before {
+      content: '';
+      background-image: url(..//images/products/products_1l@1x.png);
+      width: 280px;
+      height: 280px;
+      background-size: cover;
+      position: absolute;
+      top: -140px;
+      @include retina {
+        background-image: url(..//images/products/products_1l@2x.png);
+      }
+
+      @media screen and (min-width: $tablet) {
+        width: 224px;
+        height: 224px;
+        top: -138px;
+        background-image: url(..//images/products/products_2l@1x.png);
+        @include retina {
+          background-image: url(..//images/products/products_2l@2x.png);
+        }
+      }
+
+      @media screen and (min-width: $desktop) {
+        width: 368px;
+        height: 394px;
+        top: -261px;
+        background-image: url(..//images/products/products_3l@1x.png);
+        @include retina {
+          background-image: url(..//images/products/products_3l@2x.png);
+        }
+      }
+    }
+  }
+}
+
+.products__text {
+  font-family: 'Montserrat';
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  color: $secondaryColorText;
+  margin-top: 20px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 22px;
+    line-height: 1.22;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.23;
+    margin-top: 30px;
+  }
+}
+
+.products__description {
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  line-height: 176%;
+  text-align: center;
+  color: $secondaryColorText;
+  margin: 40px 40px 90px;
+
+  @media screen and (min-width: $tablet) {
+    margin: 40px 26px 90px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    margin: 65px 62px 60px;
+  }
+}
