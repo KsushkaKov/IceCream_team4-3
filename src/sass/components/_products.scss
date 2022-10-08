@@ -103,7 +103,7 @@
       height: 211px;
       background-size: cover;
       position: absolute;
-      top: -140px;
+      top: -108px;
       display: block;
       @include retina {
         background-image: url(..//images/products/products_1s@2x.png);
@@ -112,6 +112,7 @@
       @media screen and (min-width: $tablet) {
         width: 200px;
         height: 208px;
+        top: -120px;
         background-image: url(..//images/products/products_1m@1x.png);
         @include retina {
           background-image: url(..//images/products/products_1m@2x.png);
@@ -121,7 +122,7 @@
       @media screen and (min-width: $desktop) {
         width: 302px;
         height: 317px;
-        top: -261px;
+        top: -183px;
         background-image: url(..//images/products/products_1l@1x.png);
         @include retina {
           background-image: url(..//images/products/products_1l@2x.png);
@@ -132,7 +133,7 @@
 
   &:nth-child(2) {
     background-color: $secondCardColor;
-    margin-bottom: 140px;
+    margin-bottom: 164px;
 
     @media screen and (min-width: $tablet) {
       margin-bottom: 0px;
@@ -145,7 +146,7 @@
       height: 211px;
       background-size: cover;
       position: absolute;
-      top: -140px;
+      top: -108px;
       @include retina {
         background-image: url(..//images/products/products_2s@2x.png);
       }
@@ -153,7 +154,7 @@
       @media screen and (min-width: $tablet) {
         width: 200px;
         height: 208px;
-        top: -138px;
+        top: -120px;
         background-image: url(..//images/products/products_2m@1x.png);
         @include retina {
           background-image: url(..//images/products/products_2m@2x.png);
@@ -163,7 +164,7 @@
       @media screen and (min-width: $desktop) {
         width: 302px;
         height: 317px;
-        top: -261px;
+        top: -183px;
         background-image: url(..//images/products/products_2l@1x.png);
         @include retina {
           background-image: url(..//images/products/products_2l@2x.png);
@@ -174,6 +175,11 @@
 
   &:nth-child(3) {
     background-color: $thirdCardColor;
+    // margin-bottom: 60px;
+
+    // @media screen and (min-width: $tablet) {
+    //   margin-bottom: 0px;
+    // }
 
     &::before {
       content: '';
@@ -182,7 +188,7 @@
       height: 211px;
       background-size: cover;
       position: absolute;
-      top: -140px;
+      top: -108px;
       @include retina {
         background-image: url(..//images/products/products_3s@2x.png);
       }
@@ -190,7 +196,7 @@
       @media screen and (min-width: $tablet) {
         width: 200px;
         height: 208px;
-        top: -138px;
+        top: -120px;
         background-image: url(..//images/products/products_3m@1x.png);
         @include retina {
           background-image: url(..//images/products/products_3m@2x.png);
@@ -200,7 +206,7 @@
       @media screen and (min-width: $desktop) {
         width: 302px;
         height: 311px;
-        top: -261px;
+        top: -183px;
         background-image: url(..//images/products/products_3l@1x.png);
         @include retina {
           background-image: url(..//images/products/products_3l@2x.png);
