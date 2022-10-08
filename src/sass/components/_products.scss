@@ -274,6 +274,23 @@
     font-size: 16px;
     margin: 65px 62px 60px;
   }
+
+  &:nth-child(2) {
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 60px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 70px;
+    }
+  }
+  &:nth-child(3) {
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 83px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 66px;
+    }
+  }
 }
 
 .products__button {
@@ -285,7 +302,7 @@
 
   &:active {
     transform: translateY(-20px) translateX(20px) rotate(270deg);
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
       transform: translateY(-30px) translateX(30px) rotate(270deg);
     }
   }
@@ -307,27 +324,25 @@
 
 .products__btn {
   width: 40px;
-  height: 40px;
-  border-radius: 50%;
   border: none;
-  background-color: $mainColorText;
-  margin-bottom: 40px;
+  background-color: transparent;
+  margin-bottom: 20px;
   cursor: pointer;
   transition: background-color $timeDuration;
 
   &:active,
   &:hover,
   &:focus {
-    background-color: $acentColor;
+    color: $acentColor;
   }
 
   &::before {
     content: '\279C';
-    color: $acentColor;
+    color: $secondaryColorText;
     transform: rotate(0);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 60px;
   }
 }
