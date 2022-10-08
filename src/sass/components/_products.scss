@@ -1,6 +1,22 @@
 .products {
   padding-top: 60px;
   margin-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {
+    background-image: url(..//images/products/background-m-@1x.png);
+    background-size: cover;
+    @include retina {
+      background-image: url(..//images/products/background-m-@2x.png);
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: url(..//images/products/background-l-@1x.png);
+    background-size: cover;
+    @include retina {
+      background-image: url(..//images/products/background-l-@2x.png);
+    }
+  }
 }
 
 .products__label {
@@ -99,8 +115,8 @@
     &::before {
       content: '';
       background-image: url(..//images/products/products_1s@1x.png);
-      width: 201px;
-      height: 211px;
+      width: 200px;
+      height: 199px;
       background-size: cover;
       position: absolute;
       top: -108px;
@@ -110,8 +126,8 @@
       }
 
       @media screen and (min-width: $tablet) {
-        width: 200px;
-        height: 208px;
+        width: 199px;
+        height: 196px;
         top: -120px;
         background-image: url(..//images/products/products_1m@1x.png);
         @include retina {
@@ -120,8 +136,8 @@
       }
 
       @media screen and (min-width: $desktop) {
-        width: 302px;
-        height: 317px;
+        width: 301px;
+        height: 300px;
         top: -183px;
         background-image: url(..//images/products/products_1l@1x.png);
         @include retina {
@@ -142,8 +158,8 @@
     &::before {
       content: '';
       background-image: url(..//images/products/products_2s@1x.png);
-      width: 201px;
-      height: 211px;
+      width: 200px;
+      height: 199px;
       background-size: cover;
       position: absolute;
       top: -108px;
@@ -152,8 +168,8 @@
       }
 
       @media screen and (min-width: $tablet) {
-        width: 200px;
-        height: 208px;
+        width: 199px;
+        height: 196px;
         top: -120px;
         background-image: url(..//images/products/products_2m@1x.png);
         @include retina {
@@ -162,8 +178,8 @@
       }
 
       @media screen and (min-width: $desktop) {
-        width: 302px;
-        height: 317px;
+        width: 301px;
+        height: 300px;
         top: -183px;
         background-image: url(..//images/products/products_2l@1x.png);
         @include retina {
@@ -184,8 +200,8 @@
     &::before {
       content: '';
       background-image: url(..//images/products/products_3s@1x.png);
-      width: 201px;
-      height: 211px;
+      width: 200px;
+      height: 199px;
       background-size: cover;
       position: absolute;
       top: -108px;
@@ -194,8 +210,8 @@
       }
 
       @media screen and (min-width: $tablet) {
-        width: 200px;
-        height: 208px;
+        width: 199px;
+        height: 196px;
         top: -120px;
         background-image: url(..//images/products/products_3m@1x.png);
         @include retina {
@@ -204,8 +220,8 @@
       }
 
       @media screen and (min-width: $desktop) {
-        width: 302px;
-        height: 311px;
+        width: 301px;
+        height: 300px;
         top: -183px;
         background-image: url(..//images/products/products_3l@1x.png);
         @include retina {
