@@ -82,6 +82,16 @@
   }
 }
 
+.products__item-wrap{
+      width: 200px;
+      height: 199px;
+      background-color: black;
+      border-radius: 50%;
+      position: absolute;
+      top: -108px;
+      display: block;
+}
+
 .products__item {
   width: 280px;
   height: 100%;
@@ -251,7 +261,7 @@
     line-height: 1.22;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     font-size: 30px;
     line-height: 1.23;
     margin-top: 30px;
@@ -283,6 +293,7 @@
       margin-bottom: 70px;
     }
   }
+
   &:nth-child(3) {
     @media screen and (min-width: $tablet) {
       margin-bottom: 83px;
