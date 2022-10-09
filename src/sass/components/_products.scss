@@ -145,22 +145,11 @@
   padding: 0 40px;
   min-height: 420px;
   border-radius: 24px;
-  // width: 280px;
-  // height: 100%;
-  // padding-top: 123px;
-  // padding-bottom: 20px;
-  // display: flex;
-  // // justify-content: center;
-  // align-items: center;
-  // flex-direction: column;
-  // position: relative;
-  // border-radius: 24px;
-
   @media screen and (min-width: $tablet) {
     width: 224px;
     height: 428px;
     flex-basis: calc((100% - 48px) / 3);
-    padding: 0 10px;
+    padding: 0 26px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -177,42 +166,6 @@
     @media screen and (min-width: $tablet) {
       margin-bottom: 0px;
     }
-
-    // &::before {
-    //   content: '';
-    //   background-image: url(..//images/products/products_1s@1x.png);
-    //   width: 200px;
-    //   height: 199px;
-    //   background-size: cover;
-    //   position: absolute;
-    //   top: -108px;
-    //   display: block;
-    //   z-index: 2;
-    //   @include retina {
-    //     background-image: url(..//images/products/products_1s@2x.png);
-    //   }
-
-    //   @media screen and (min-width: $tablet) {
-    //     width: 199px;
-    //     height: 196px;
-    //     top: -120px;
-    //     background-image: url(..//images/products/products_1m@1x.png);
-    //     @include retina {
-    //       background-image: url(..//images/products/products_1m@2x.png);
-    //     }
-    //   }
-
-    //   @media screen and (min-width: $desktop) {
-    //     width: 301px;
-    //     height: 300px;
-    //     top: -183px;
-    //     background-image: url(..//images/products/products_1l@1x.png);
-    //     @include retina {
-    //       background-image: url(..//images/products/products_1l@2x.png);
-    //     }
-    
-    //   }
-    
   }
 
   &:nth-child(2) {
@@ -222,78 +175,10 @@
     @media screen and (min-width: $tablet) {
       margin-bottom: 0px;
     }
-
-    // &::before {
-    //   content: '';
-    //   background-image: url(..//images/products/products_2s@1x.png);
-    //   width: 200px;
-    //   height: 199px;
-    //   background-size: cover;
-    //   position: absolute;
-    //   top: -108px;
-    //   z-index: 2;
-    //   @include retina {
-    //     background-image: url(..//images/products/products_2s@2x.png);
-    //   }
-
-    //   @media screen and (min-width: $tablet) {
-    //     width: 199px;
-    //     height: 196px;
-    //     top: -120px;
-    //     background-image: url(..//images/products/products_2m@1x.png);
-    //     @include retina {
-    //       background-image: url(..//images/products/products_2m@2x.png);
-    //     }
-    //   }
-
-    //   @media screen and (min-width: $desktop) {
-    //     width: 301px;
-    //     height: 300px;
-    //     top: -183px;
-    //     background-image: url(..//images/products/products_2l@1x.png);
-    //     @include retina {
-    //       background-image: url(..//images/products/products_2l@2x.png);
-    //     }
-    //   }
-    // }
   }
 
   &:nth-child(3) {
     background-color: $thirdCardColor;
-
-    // &::before {
-    //   content: '';
-    //   background-image: url(..//images/products/products_3s@1x.png);
-    //   width: 200px;
-    //   height: 199px;
-    //   background-size: cover;
-    //   position: absolute;
-    //   top: -108px;
-    //   z-index: 2;
-    //   @include retina {
-    //     background-image: url(..//images/products/products_3s@2x.png);
-    //   }
-
-    //   @media screen and (min-width: $tablet) {
-    //     width: 199px;
-    //     height: 196px;
-    //     top: -120px;
-    //     background-image: url(..//images/products/products_3m@1x.png);
-    //     @include retina {
-    //       background-image: url(..//images/products/products_3m@2x.png);
-    //     }
-    //   }
-
-    //   @media screen and (min-width: $desktop) {
-    //     width: 301px;
-    //     height: 300px;
-    //     top: -183px;
-    //     background-image: url(..//images/products/products_3l@1x.png);
-    //     @include retina {
-    //       background-image: url(..//images/products/products_3l@2x.png);
-    //     }
-    //   }
-    // }
   }
 }
 
@@ -308,15 +193,6 @@
   text-align: center;
   text-transform: uppercase;
   color: $secondaryColorText;
-  // font-family: 'Montserrat';
-  // font-size: 20px;
-  // font-weight: 700;
-  // letter-spacing: 0.04em;
-  // line-height: 1.2;
-  // text-align: center;
-  // text-transform: uppercase;
-  // color: $secondaryColorText;
-  // margin-top: 20px;
 
   @media screen and (min-width: $tablet) {
     padding-top: 107px;
@@ -331,8 +207,7 @@
   }
 
   &--icecream {
-
-  &::before {
+    &::before {
       content: '';
       background-image: url(..//images/products/products_1s@1x.png);
       width: 200px;
@@ -340,7 +215,7 @@
       background-size: contain;
       position: absolute;
       top: 0;
-      transform: translate(0,-54%);
+      transform: translate(0, -54%);
       display: block;
       z-index: 2;
       @include retina {
@@ -350,8 +225,8 @@
       @media screen and (min-width: $tablet) {
         width: 199px;
         height: 196px;
-        
-      transform: translate(7%,-60%);
+
+        transform: translate(2%, -60%);
         background-image: url(..//images/products/products_1m@1x.png);
         @include retina {
           background-image: url(..//images/products/products_1m@2x.png);
@@ -361,8 +236,8 @@
       @media screen and (min-width: $desktop) {
         width: 301px;
         height: 300px;
-        
-      transform: translate(10%,-62%);
+
+        transform: translate(10%, -62%);
         background-image: url(..//images/products/products_1l@1x.png);
         @include retina {
           background-image: url(..//images/products/products_1l@2x.png);
@@ -372,7 +247,6 @@
   }
 
   &--icecoffee {
-
     &::before {
       content: '';
       background-image: url(..//images/products/products_2s@1x.png);
@@ -381,8 +255,8 @@
       background-size: contain;
       position: absolute;
       top: 0;
-      
-      transform: translate(0,-54%);
+      display: block;
+      transform: translate(0, -54%);
       z-index: 2;
       @include retina {
         background-image: url(..//images/products/products_2s@2x.png);
@@ -391,7 +265,7 @@
       @media screen and (min-width: $tablet) {
         width: 199px;
         height: 196px;
-        transform: translate(7%,-60%);
+        transform: translate(2%, -60%);
         background-image: url(..//images/products/products_2m@1x.png);
         @include retina {
           background-image: url(..//images/products/products_2m@2x.png);
@@ -401,7 +275,7 @@
       @media screen and (min-width: $desktop) {
         width: 301px;
         height: 300px;
-        transform: translate(10%,-62%);
+        transform: translate(10%, -62%);
         background-image: url(..//images/products/products_2l@1x.png);
         @include retina {
           background-image: url(..//images/products/products_2l@2x.png);
@@ -411,7 +285,6 @@
   }
 
   &--milkshake {
-
     &::before {
       content: '';
       background-image: url(..//images/products/products_3s@1x.png);
@@ -420,8 +293,8 @@
       background-size: contain;
       position: absolute;
       top: 0;
-     
-      transform: translate(0,-54%);
+      display: block;
+      transform: translate(0, -54%);
       z-index: 2;
       @include retina {
         background-image: url(..//images/products/products_3s@2x.png);
@@ -430,7 +303,7 @@
       @media screen and (min-width: $tablet) {
         width: 199px;
         height: 196px;
-      transform: translate(7%,-60%);
+        transform: translate(2%, -60%);
         background-image: url(..//images/products/products_3m@1x.png);
         @include retina {
           background-image: url(..//images/products/products_3m@2x.png);
@@ -440,7 +313,7 @@
       @media screen and (min-width: $desktop) {
         width: 301px;
         height: 300px;
-        transform: translate(10%,-62%);
+        transform: translate(10%, -62%);
         background-image: url(..//images/products/products_3l@1x.png);
         @include retina {
           background-image: url(..//images/products/products_3l@2x.png);
@@ -457,20 +330,39 @@
   line-height: 1.76;
   text-align: center;
   color: $secondaryColorText;
-  // font-size: 14px;
-  // letter-spacing: 0.04em;
-  // line-height: 1.76;
-  // text-align: center;
-  // color: $secondaryColorText;
-  // margin: 40px 40px 0 40px;
-
-  @media screen and (min-width: $tablet) {
-    margin: 0 0 90px;
-  }
 
   @media screen and (min-width: $desktop) {
     font-size: 16px;
-    margin: 0 0 80px;
+  }
+
+  &--icecream {
+    @media screen and (min-width: $tablet) {
+      margin: 0 0 90px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin: 0 0 90px;
+    }
+  }
+
+  &--icecoffee {
+    @media screen and (min-width: $tablet) {
+      margin: 0 0 59px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin: 0 0 70px;
+    }
+  }
+
+  &--milkshake {
+    @media screen and (min-width: $tablet) {
+      margin: 0 0 83px;
+
+      @media screen and (min-width: $desktop) {
+        margin: 0 0 66px;
+      }
+    }
   }
 }
 
@@ -496,8 +388,7 @@
     transform: rotate(0);
   }
 
-    @media screen and (min-width: $desktop) {
-      margin-bottom: 60px;
-    }
-  
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 60px;
+  }
 }
