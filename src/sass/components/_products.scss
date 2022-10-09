@@ -160,15 +160,14 @@
     width: 224px;
     height: 428px;
     flex-basis: calc((100% - 48px) / 3);
-    padding-top: 87px;
+    padding: 0 10px;
   }
 
   @media screen and (min-width: $desktop) {
     width: 370px;
     height: 535px;
     flex-basis: calc((100% - 96px) / 3);
-    padding-top: 146px;
-    padding-bottom: 60px;
+    padding: 0 60px;
   }
 
   &:nth-child(1) {
@@ -341,8 +340,7 @@
       background-size: contain;
       position: absolute;
       top: 0;
-      left: 0;
-      transform: translate(-20%,-54%);
+      transform: translate(0,-54%);
       display: block;
       z-index: 2;
       @include retina {
@@ -353,7 +351,7 @@
         width: 199px;
         height: 196px;
         
-      transform: translate(-6%,-55%);
+      transform: translate(7%,-60%);
         background-image: url(..//images/products/products_1m@1x.png);
         @include retina {
           background-image: url(..//images/products/products_1m@2x.png);
@@ -364,7 +362,7 @@
         width: 301px;
         height: 300px;
         
-      transform: translate(-17%,-93%);
+      transform: translate(10%,-62%);
         background-image: url(..//images/products/products_1l@1x.png);
         @include retina {
           background-image: url(..//images/products/products_1l@2x.png);
@@ -383,8 +381,8 @@
       background-size: contain;
       position: absolute;
       top: 0;
-      left: 0;
-      transform: translate(-20%,-54%);
+      
+      transform: translate(0,-54%);
       z-index: 2;
       @include retina {
         background-image: url(..//images/products/products_2s@2x.png);
@@ -393,7 +391,7 @@
       @media screen and (min-width: $tablet) {
         width: 199px;
         height: 196px;
-        transform: translate(-6%,-55%);
+        transform: translate(7%,-60%);
         background-image: url(..//images/products/products_2m@1x.png);
         @include retina {
           background-image: url(..//images/products/products_2m@2x.png);
@@ -403,7 +401,7 @@
       @media screen and (min-width: $desktop) {
         width: 301px;
         height: 300px;
-        transform: translate(-17%,-93%);
+        transform: translate(10%,-62%);
         background-image: url(..//images/products/products_2l@1x.png);
         @include retina {
           background-image: url(..//images/products/products_2l@2x.png);
@@ -422,8 +420,8 @@
       background-size: contain;
       position: absolute;
       top: 0;
-      left: 0;
-      transform: translate(-20%,-54%);
+     
+      transform: translate(0,-54%);
       z-index: 2;
       @include retina {
         background-image: url(..//images/products/products_3s@2x.png);
@@ -432,7 +430,7 @@
       @media screen and (min-width: $tablet) {
         width: 199px;
         height: 196px;
-      transform: translate(-6%,-55%);
+      transform: translate(7%,-60%);
         background-image: url(..//images/products/products_3m@1x.png);
         @include retina {
           background-image: url(..//images/products/products_3m@2x.png);
@@ -442,7 +440,7 @@
       @media screen and (min-width: $desktop) {
         width: 301px;
         height: 300px;
-        transform: translate(-17%,-93%);
+        transform: translate(10%,-62%);
         background-image: url(..//images/products/products_3l@1x.png);
         @include retina {
           background-image: url(..//images/products/products_3l@2x.png);
@@ -467,12 +465,12 @@
   // margin: 40px 40px 0 40px;
 
   @media screen and (min-width: $tablet) {
-    margin: 40px 26px 0 26px;
+    margin: 0 0 90px;
   }
 
   @media screen and (min-width: $desktop) {
     font-size: 16px;
-    margin: 65px 62px 0 62px;
+    margin: 0 0 80px;
   }
 }
 
@@ -498,33 +496,8 @@
     transform: rotate(0);
   }
 
-  &--icecream {
-    margin-top: 110px;
-
-    @media screen and (min-width: $tablet) {
-      margin-top: 90px;
-    }
     @media screen and (min-width: $desktop) {
-      margin-top: 80px;
+      margin-bottom: 60px;
     }
-  }
-
-  &--icecoffee {
-    margin-top: 40px;
-
-    @media screen and (min-width: $desktop) {
-      margin-top: 70px;
-    }
-  }
-
-  &--milkshake {
-    margin-top: 87px;
-
-    @media screen and (min-width: $tablet) {
-      margin-top: 63px;
-    }
-    @media screen and (min-width: $desktop) {
-      margin-top: 66px;
-    }
-  }
+  
 }
