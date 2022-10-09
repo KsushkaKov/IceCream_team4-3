@@ -319,7 +319,7 @@
 .products__description {
   font-size: 14px;
   letter-spacing: 0.04em;
-  line-height: 176%;
+  line-height: 1.76;
   text-align: center;
   color: $secondaryColorText;
   margin: 40px 40px 0 40px;
@@ -334,40 +334,14 @@
   }
 }
 
-.products__button {
-  display: block;
-  text-align: center;
-  transform: translate(0) rotate(0);
-  transition: background-color $timeDuration;
-
-  &:active {
-    transform: translateY(-20px) translateX(20px) rotate(270deg);
-    @media screen and (min-width: $desktop) {
-      transform: translateY(-30px) translateX(30px) rotate(270deg);
-    }
-  }
-
-  // ___js___
-
-  // &.active {
-  //   &__cream,
-  //   &__coffee,
-  //   &__milkshakes {
-  //     transform: translateY(-20px) translateX(20px) rotate(270deg);
-
-  //     @media screen and (min-width: 1200px) {
-  //       transform: translateY(-30px) translateX(30px) rotate(270deg);
-  //     }
-  //   }
-  // }
-}
-
 .products__btn {
+  display: block;
+  margin: 0 auto;
   width: 40px;
   border: none;
   background-color: transparent;
   cursor: pointer;
-  transition: background-color $timeDuration;
+  transition: color $timeDuration;
 
   &:active,
   &:hover,
@@ -393,7 +367,7 @@
   }
 
   &--icecoffee {
-    margin-top: 60px;
+    margin-top: 40px;
 
     @media screen and (min-width: $desktop) {
       margin-top: 70px;
@@ -404,7 +378,7 @@
     margin-top: 87px;
 
     @media screen and (min-width: $tablet) {
-      margin-top: 83px;
+      margin-top: 63px;
     }
     @media screen and (min-width: $desktop) {
       margin-top: 66px;
