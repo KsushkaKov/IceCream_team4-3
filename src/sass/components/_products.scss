@@ -340,9 +340,9 @@
       height: 199px;
       background-size: contain;
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-81%);
+      top: 0;
+      left: 0;
+      transform: translate(-20%,-54%);
       display: block;
       z-index: 2;
       @include retina {
@@ -353,7 +353,7 @@
         width: 199px;
         height: 196px;
         
-      transform: translate(-50%,-81%);
+      transform: translate(-6%,-55%);
         background-image: url(..//images/products/products_1m@1x.png);
         @include retina {
           background-image: url(..//images/products/products_1m@2x.png);
@@ -364,7 +364,7 @@
         width: 301px;
         height: 300px;
         
-      transform: translate(-50%,-81%);
+      transform: translate(-17%,-93%);
         background-image: url(..//images/products/products_1l@1x.png);
         @include retina {
           background-image: url(..//images/products/products_1l@2x.png);
@@ -382,9 +382,9 @@
       height: 199px;
       background-size: contain;
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-81%);
+      top: 0;
+      left: 0;
+      transform: translate(-20%,-54%);
       z-index: 2;
       @include retina {
         background-image: url(..//images/products/products_2s@2x.png);
@@ -393,7 +393,7 @@
       @media screen and (min-width: $tablet) {
         width: 199px;
         height: 196px;
-        
+        transform: translate(-6%,-55%);
         background-image: url(..//images/products/products_2m@1x.png);
         @include retina {
           background-image: url(..//images/products/products_2m@2x.png);
@@ -403,7 +403,7 @@
       @media screen and (min-width: $desktop) {
         width: 301px;
         height: 300px;
-        
+        transform: translate(-17%,-93%);
         background-image: url(..//images/products/products_2l@1x.png);
         @include retina {
           background-image: url(..//images/products/products_2l@2x.png);
@@ -421,9 +421,9 @@
       height: 199px;
       background-size: contain;
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-81%);
+      top: 0;
+      left: 0;
+      transform: translate(-20%,-54%);
       z-index: 2;
       @include retina {
         background-image: url(..//images/products/products_3s@2x.png);
@@ -432,7 +432,7 @@
       @media screen and (min-width: $tablet) {
         width: 199px;
         height: 196px;
-      
+      transform: translate(-6%,-55%);
         background-image: url(..//images/products/products_3m@1x.png);
         @include retina {
           background-image: url(..//images/products/products_3m@2x.png);
@@ -442,7 +442,7 @@
       @media screen and (min-width: $desktop) {
         width: 301px;
         height: 300px;
-        
+        transform: translate(-17%,-93%);
         background-image: url(..//images/products/products_3l@1x.png);
         @include retina {
           background-image: url(..//images/products/products_3l@2x.png);
