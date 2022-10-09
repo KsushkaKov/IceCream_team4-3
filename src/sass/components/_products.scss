@@ -325,33 +325,15 @@
   line-height: 176%;
   text-align: center;
   color: $secondaryColorText;
-  margin: 40px 40px 90px;
+  margin: 40px 40px 0 40px;
 
   @media screen and (min-width: $tablet) {
-    margin: 40px 26px 90px;
+    margin: 40px 26px 0 26px;
   }
 
   @media screen and (min-width: $desktop) {
     font-size: 16px;
-    margin: 65px 62px 60px;
-  }
-
-  &--icecoffee {
-    @media screen and (min-width: $tablet) {
-      margin-bottom: 60px;
-    }
-    @media screen and (min-width: $desktop) {
-      margin-bottom: 70px;
-    }
-  }
-
-  &--milkshake {
-    @media screen and (min-width: $tablet) {
-      margin-bottom: 83px;
-    }
-    @media screen and (min-width: $desktop) {
-      margin-bottom: 66px;
-    }
+    margin: 65px 62px 0 62px;
   }
 }
 
