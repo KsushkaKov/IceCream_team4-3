@@ -178,40 +178,41 @@
       margin-bottom: 0px;
     }
 
-    &::before {
-      content: '';
-      background-image: url(..//images/products/products_1s@1x.png);
-      width: 200px;
-      height: 199px;
-      background-size: cover;
-      position: absolute;
-      top: -108px;
-      display: block;
-      z-index: 2;
-      @include retina {
-        background-image: url(..//images/products/products_1s@2x.png);
-      }
+    // &::before {
+    //   content: '';
+    //   background-image: url(..//images/products/products_1s@1x.png);
+    //   width: 200px;
+    //   height: 199px;
+    //   background-size: cover;
+    //   position: absolute;
+    //   top: -108px;
+    //   display: block;
+    //   z-index: 2;
+    //   @include retina {
+    //     background-image: url(..//images/products/products_1s@2x.png);
+    //   }
 
-      @media screen and (min-width: $tablet) {
-        width: 199px;
-        height: 196px;
-        top: -120px;
-        background-image: url(..//images/products/products_1m@1x.png);
-        @include retina {
-          background-image: url(..//images/products/products_1m@2x.png);
-        }
-      }
+    //   @media screen and (min-width: $tablet) {
+    //     width: 199px;
+    //     height: 196px;
+    //     top: -120px;
+    //     background-image: url(..//images/products/products_1m@1x.png);
+    //     @include retina {
+    //       background-image: url(..//images/products/products_1m@2x.png);
+    //     }
+    //   }
 
-      @media screen and (min-width: $desktop) {
-        width: 301px;
-        height: 300px;
-        top: -183px;
-        background-image: url(..//images/products/products_1l@1x.png);
-        @include retina {
-          background-image: url(..//images/products/products_1l@2x.png);
-        }
-      }
-    }
+    //   @media screen and (min-width: $desktop) {
+    //     width: 301px;
+    //     height: 300px;
+    //     top: -183px;
+    //     background-image: url(..//images/products/products_1l@1x.png);
+    //     @include retina {
+    //       background-image: url(..//images/products/products_1l@2x.png);
+    //     }
+    
+    //   }
+    
   }
 
   &:nth-child(2) {
@@ -327,6 +328,40 @@
     line-height: 1.23;
     margin-top: 30px;
   }
+  &::before {
+      content: '';
+      background-image: url(..//images/products/products_1s@1x.png);
+      width: 200px;
+      height: 199px;
+      background-size: cover;
+      position: absolute;
+      top: -108px;
+      display: block;
+      z-index: 2;
+      @include retina {
+        background-image: url(..//images/products/products_1s@2x.png);
+      }
+
+      @media screen and (min-width: $tablet) {
+        width: 199px;
+        height: 196px;
+        top: -120px;
+        background-image: url(..//images/products/products_1m@1x.png);
+        @include retina {
+          background-image: url(..//images/products/products_1m@2x.png);
+        }
+      }
+
+      @media screen and (min-width: $desktop) {
+        width: 301px;
+        height: 300px;
+        top: -183px;
+        background-image: url(..//images/products/products_1l@1x.png);
+        @include retina {
+          background-image: url(..//images/products/products_1l@2x.png);
+        }
+      }
+    }
 }
 
 .products__description {
