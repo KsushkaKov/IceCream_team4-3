@@ -105,7 +105,7 @@
   @media screen and (min-width: $desktop) {
     width: 300px;
     height: 300px;
-    left: 34px;
+    left: 30px;
     top: -166px;
   }
 
@@ -155,14 +155,14 @@
     width: 224px;
     height: 428px;
     flex-basis: calc((100% - 48px) / 3);
-    padding-top: 107px;
+    padding-top: 87px;
   }
 
   @media screen and (min-width: $desktop) {
     width: 370px;
     height: 535px;
     flex-basis: calc((100% - 96px) / 3);
-    padding-top: 166px;
+    padding-top: 146px;
   }
 
   &:nth-child(1) {
@@ -356,9 +356,8 @@
 }
 
 .products__button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  text-align: center;
   transform: translate(0) rotate(0);
   transition: background-color $timeDuration;
 
