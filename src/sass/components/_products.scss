@@ -2,8 +2,6 @@
   padding-top: 60px;
   margin-bottom: 60px;
   background-color: $pureWhiteColor;
-  background-size: cover;
-  background-repeat: repeat-y;
   background-image: url(../images/products/background-s-@1x.png);
   @include retina {
       background-image: url(../images/products/background-s-@2x.png);
@@ -98,15 +96,15 @@
   display: block;
 
   @media screen and (min-width: $tablet) {
-    width: 224px;
-    height: 428px;
-    left: 12px;
+    width: 199px;
+    height: 196px;
+    left: 15px;
     top: -108px;
   }
 
   @media screen and (min-width: $desktop) {
-    width: 370px;
-    height: 535px;
+    width: 300px;
+    height: 300px;
     left: 34px;
     top: -166px;
   }
