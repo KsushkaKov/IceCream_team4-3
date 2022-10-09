@@ -8,6 +8,8 @@
   }
 
   @media screen and (min-width: $tablet) {
+    background-size: cover;
+    background-repeat: no-repeat;
     background-image: url(..//images/products/background-m-@1x.png);
 
     @include retina {
@@ -16,6 +18,8 @@
   }
 
   @media screen and (min-width: $desktop) {
+    background-size: cover;
+    background-repeat: no-repeat;
     background-image: url(..//images/products/background-l-@1x.png);
 
     @include retina {
@@ -89,8 +93,9 @@
 .products__item-wrap {
   width: 200px;
   height: 199px;
-  left: 40px;
-  top: -97px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -153%);
   border-radius: 50%;
   position: absolute;
   display: block;
@@ -98,15 +103,13 @@
   @media screen and (min-width: $tablet) {
     width: 199px;
     height: 196px;
-    left: 15px;
-    top: -108px;
+    transform: translate(-50%, -163%);
   }
 
   @media screen and (min-width: $desktop) {
     width: 300px;
     height: 300px;
-    left: 30px;
-    top: -166px;
+    transform: translate(-50%, -143%);
   }
 
   &--icecream {
@@ -214,8 +217,9 @@
       height: 199px;
       background-size: contain;
       position: absolute;
-      top: 0;
-      transform: translate(0, -54%);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -160%);
       display: block;
       z-index: 2;
       @include retina {
@@ -226,7 +230,7 @@
         width: 199px;
         height: 196px;
 
-        transform: translate(-6%, -62%);
+        transform: translate(-50%, -170%);
         background-image: url(..//images/products/products_1m@1x.png);
         @include retina {
           background-image: url(..//images/products/products_1m@2x.png);
@@ -237,7 +241,7 @@
         width: 301px;
         height: 300px;
 
-        transform: translate(-10%, -62%);
+        transform: translate(-50%, -152%);
         background-image: url(..//images/products/products_1l@1x.png);
         @include retina {
           background-image: url(..//images/products/products_1l@2x.png);
@@ -254,9 +258,11 @@
       height: 199px;
       background-size: contain;
       position: absolute;
-      top: 0;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -160%);
       display: block;
-      transform: translate(0, -54%);
+
       z-index: 2;
       @include retina {
         background-image: url(..//images/products/products_2s@2x.png);
@@ -265,7 +271,7 @@
       @media screen and (min-width: $tablet) {
         width: 199px;
         height: 196px;
-        transform: translate(-6%, -62%);
+        transform: translate(-50%, -170%);
         background-image: url(..//images/products/products_2m@1x.png);
         @include retina {
           background-image: url(..//images/products/products_2m@2x.png);
@@ -275,7 +281,7 @@
       @media screen and (min-width: $desktop) {
         width: 301px;
         height: 300px;
-        transform: translate(-10%, -62%);
+        transform: translate(-50%, -152%);
         background-image: url(..//images/products/products_2l@1x.png);
         @include retina {
           background-image: url(..//images/products/products_2l@2x.png);
@@ -292,9 +298,10 @@
       height: 199px;
       background-size: contain;
       position: absolute;
-      top: 0;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -160%);
       display: block;
-      transform: translate(0, -54%);
       z-index: 2;
       @include retina {
         background-image: url(..//images/products/products_3s@2x.png);
@@ -303,7 +310,7 @@
       @media screen and (min-width: $tablet) {
         width: 199px;
         height: 196px;
-        transform: translate(-6%, -62%);
+        transform: translate(-50%, -170%);
         background-image: url(..//images/products/products_3m@1x.png);
         @include retina {
           background-image: url(..//images/products/products_3m@2x.png);
@@ -313,7 +320,7 @@
       @media screen and (min-width: $desktop) {
         width: 301px;
         height: 300px;
-        transform: translate(-10%, -62%);
+        transform: translate(-50%, -152%);
         background-image: url(..//images/products/products_3l@1x.png);
         @include retina {
           background-image: url(..//images/products/products_3l@2x.png);
