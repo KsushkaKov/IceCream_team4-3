@@ -4,12 +4,12 @@
   background-color: $pureWhiteColor;
   background-image: url(../images/products/background-s-@1x.png);
   @include retina {
-      background-image: url(../images/products/background-s-@2x.png);
-    }
+    background-image: url(../images/products/background-s-@2x.png);
+  }
 
   @media screen and (min-width: $tablet) {
     background-image: url(..//images/products/background-m-@1x.png);
-    
+
     @include retina {
       background-image: url(..//images/products/background-m-@2x.png);
     }
@@ -17,7 +17,7 @@
 
   @media screen and (min-width: $desktop) {
     background-image: url(..//images/products/background-l-@1x.png);
-    
+
     @include retina {
       background-image: url(..//images/products/background-l-@2x.png);
     }
@@ -144,6 +144,7 @@
   width: 280px;
   height: 100%;
   padding-top: 123px;
+  padding-bottom: 20px;
   display: flex;
   // justify-content: center;
   align-items: center;
@@ -163,6 +164,7 @@
     height: 535px;
     flex-basis: calc((100% - 96px) / 3);
     padding-top: 146px;
+    padding-bottom: 60px;
   }
 
   &:nth-child(1) {
@@ -254,11 +256,6 @@
 
   &:nth-child(3) {
     background-color: $thirdCardColor;
-    // margin-bottom: 60px;
-
-    // @media screen and (min-width: $tablet) {
-    //   margin-bottom: 0px;
-    // }
 
     &::before {
       content: '';
@@ -369,7 +366,6 @@
   width: 40px;
   border: none;
   background-color: transparent;
-  margin-bottom: 20px;
   cursor: pointer;
   transition: background-color $timeDuration;
 
@@ -385,7 +381,33 @@
     transform: rotate(0);
   }
 
-  @media screen and (min-width: $desktop) {
-    margin-bottom: 60px;
+  &--icecream {
+    margin-top: 110px;
+
+    @media screen and (min-width: $tablet) {
+      margin-top: 90px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-top: 80px;
+    }
+  }
+
+  &--icecoffee {
+    margin-top: 60px;
+
+    @media screen and (min-width: $desktop) {
+      margin-top: 70px;
+    }
+  }
+
+  &--milkshake {
+    margin-top: 87px;
+
+    @media screen and (min-width: $tablet) {
+      margin-top: 83px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-top: 66px;
+    }
   }
 }
