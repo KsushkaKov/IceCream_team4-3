@@ -336,7 +336,7 @@
     margin: 65px 62px 60px;
   }
 
-  &:nth-child(2) {
+  &--icecoffee {
     @media screen and (min-width: $tablet) {
       margin-bottom: 60px;
     }
@@ -345,7 +345,7 @@
     }
   }
 
-  &:nth-child(3) {
+  &--milkshake {
     @media screen and (min-width: $tablet) {
       margin-bottom: 83px;
     }
@@ -399,7 +399,7 @@
   }
 
   &::before {
-    content: '\279C';
+    content: '\27F6';
     color: $secondaryColorText;
     transform: rotate(0);
   }
