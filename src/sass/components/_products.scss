@@ -1,6 +1,6 @@
 .products {
   padding-top: 60px;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
   background-color: $pureWhiteColor;
   background-image: url(../images/products/background-s-@1x.png);
   @include retina {
@@ -109,7 +109,7 @@
     top: -166px;
   }
 
-  &:nth-child(1) {
+  &--icecream {
     background: linear-gradient(
         0deg,
         rgba(156, 190, 143, 0.7),
@@ -119,7 +119,7 @@
     box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
   }
 
-  &:nth-child(2) {
+  &--icecoffee {
     background: linear-gradient(
         0deg,
         rgba(248, 210, 78, 0.7),
@@ -129,7 +129,7 @@
     box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
   }
 
-  &:nth-child(3) {
+  &--milkshake {
     background: linear-gradient(
         0deg,
         rgba(213, 117, 63, 0.7),
