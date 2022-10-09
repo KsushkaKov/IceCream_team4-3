@@ -4,9 +4,9 @@
   background-color: $pureWhiteColor;
   background-size: cover;
   background-repeat: repeat-y;
-  background-image: url(..//imaged/products/background-s-@1x.png);
+  background-image: url(../imaged/products/background-s-@1x.png);
   @include retina {
-      background-image: url(..//images/products/background-s-@2x.png);
+      background-image: url(../images/products/background-s-@2x.png);
     }
 
   @media screen and (min-width: $tablet) {
