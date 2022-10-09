@@ -226,7 +226,7 @@
         width: 199px;
         height: 196px;
 
-        transform: translate(2%, -60%);
+        transform: translate(-6%, -62%);
         background-image: url(..//images/products/products_1m@1x.png);
         @include retina {
           background-image: url(..//images/products/products_1m@2x.png);
@@ -237,7 +237,7 @@
         width: 301px;
         height: 300px;
 
-        transform: translate(10%, -62%);
+        transform: translate(-10%, -62%);
         background-image: url(..//images/products/products_1l@1x.png);
         @include retina {
           background-image: url(..//images/products/products_1l@2x.png);
@@ -265,7 +265,7 @@
       @media screen and (min-width: $tablet) {
         width: 199px;
         height: 196px;
-        transform: translate(2%, -60%);
+        transform: translate(-6%, -62%);
         background-image: url(..//images/products/products_2m@1x.png);
         @include retina {
           background-image: url(..//images/products/products_2m@2x.png);
@@ -275,7 +275,7 @@
       @media screen and (min-width: $desktop) {
         width: 301px;
         height: 300px;
-        transform: translate(10%, -62%);
+        transform: translate(-10%, -62%);
         background-image: url(..//images/products/products_2l@1x.png);
         @include retina {
           background-image: url(..//images/products/products_2l@2x.png);
@@ -303,7 +303,7 @@
       @media screen and (min-width: $tablet) {
         width: 199px;
         height: 196px;
-        transform: translate(2%, -60%);
+        transform: translate(-6%, -62%);
         background-image: url(..//images/products/products_3m@1x.png);
         @include retina {
           background-image: url(..//images/products/products_3m@2x.png);
@@ -313,7 +313,7 @@
       @media screen and (min-width: $desktop) {
         width: 301px;
         height: 300px;
-        transform: translate(10%, -62%);
+        transform: translate(-10%, -62%);
         background-image: url(..//images/products/products_3l@1x.png);
         @include retina {
           background-image: url(..//images/products/products_3l@2x.png);
@@ -337,17 +337,17 @@
 
   &--icecream {
     @media screen and (min-width: $tablet) {
-      margin: 0 0 90px;
+      margin: 0 0 113px;
     }
 
     @media screen and (min-width: $desktop) {
-      margin: 0 0 90px;
+      margin: 0 0 96px;
     }
   }
 
   &--icecoffee {
     @media screen and (min-width: $tablet) {
-      margin: 0 0 59px;
+      margin: 0 0 39px;
     }
 
     @media screen and (min-width: $desktop) {
@@ -357,7 +357,7 @@
 
   &--milkshake {
     @media screen and (min-width: $tablet) {
-      margin: 0 0 83px;
+      margin: 0 0 64px;
 
       @media screen and (min-width: $desktop) {
         margin: 0 0 66px;
