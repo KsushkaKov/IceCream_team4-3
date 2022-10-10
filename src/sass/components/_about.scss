@@ -89,7 +89,7 @@
        }
        &::after {
             content: '';
-            background-image: url(..//images/about/about-cow-mobile-@1X-279x279-min.png);
+            background-image: url(..//images/about/about-cow-mobile-@1X-280x279-min.png);
             width: 279px;
             height: 279px;
             background-size: cover;
@@ -99,14 +99,14 @@
             z-index: 2;
             
         @include retina {
-            background-image: url(..//images/about/about-cow-mobile-@2X-558x558-min.png);
+            background-image: url(..//images/about/about-cow-mobile-@2X-560x558-min.png);
         }
 
         @include mq(mob-only) {
             transform: translateX(-50%);
         }
             @include mq(tab-only) {
-                background-image: url(..//images/about/about-cow-tablet-@1X-334x330-min.png);
+                background-image: url(..//images/about/about-cow-tablet-@1X-340x339-min.png);
 
                 top: 98px;
                 left: 17px;
@@ -114,11 +114,11 @@
                 width: 334px;
                 height: 330px;
                     @include retina {
-                        background-image: url(..//images/about/about-cow-tablet-@2X-668x660-min.png);
+                        background-image: url(..//images/about/about-cow-tablet-@2X-680x678-min.png);
         }
         }
         @include mq(desk) {
-            background-image: url(..//images/about/about-cow-desktop-@1X-490x490-min.png);
+            background-image: url(..//images/about/about-cow-desktop-@1X-516x516-min.png);
 
             top: 121px;
             left: 0;
@@ -127,7 +127,7 @@
             height: 490px;
 
                     @include retina {
-                        background-image: url(..//images/about/about-cow-desktop-@2X-980x980-min.png);
+                        background-image: url(..//images/about/about-cow-desktop-@1X-516x516-min.png);
         }
         }
 
