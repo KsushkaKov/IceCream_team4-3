@@ -3,6 +3,10 @@
   padding-bottom: 60px;
   background-color: $pureWhiteColor;
   background-image: url(../images/products/background-s-@1x.png);
+  background-size: contain;
+  background-repeat: repeat-y;
+  
+
   @include retina {
     background-image: url(../images/products/background-s-@2x.png);
   }
