@@ -28,7 +28,7 @@
         gap: 80px;
     }
 
-     @include mq(tab-only) {
+    @include mq(tab-only) {
         padding-left: 61px;
         padding-right: 61px;
     }
@@ -43,10 +43,12 @@
     position: relative;
     display: flex;
     flex-direction: column;
+
     @include mq(tab) {
         padding-top: 82px;
         width: 152px;
     }
+
     @include mq(desk) {
         padding-top: 90px;
         width: 368px;
@@ -66,22 +68,24 @@
     background-color: $acentColor;
 }
 
-.advantages__item:nth-child(1) {&::after {
-    position: absolute;
-    top: 7px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: block;
-    width: 36px;
-    height: 36px;
-    content: '';
-    background-image: url(..//images/advantages/cow-x1.png);
-    background-size: cover;
+.advantages__item:nth-child(1) {
+    &::after {
+        position: absolute;
+        top: 7px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        width: 36px;
+        height: 36px;
+        content: '';
+        background-image: url(..//images/advantages/cow-x1.png);
+        background-size: cover;
 
-    @include retina {
-        background-image: url(..//images/advantages/cow-x2.png);
+        @include retina {
+            background-image: url(..//images/advantages/cow-x2.png);
+        }
     }
-}}
+}
 
 .advantages__item:nth-child(2) {
     &::after {
@@ -131,17 +135,19 @@
     text-transform: uppercase;
 
     margin-bottom: 18px;
+
     @include mq(tab) {
         font-family: 'Montserrat';
         font-size: 48px;
         line-height: 1.23;
         margin-bottom: 16px;
-        }
+    }
+
     @include mq(desk) {
         font-family: 'Montserrat';
         font-size: 58px;
         line-height: 1.22;
-        }
+    }
 }
 
 .advantages__item-description {
@@ -154,11 +160,11 @@
     margin-top: 0;
     margin-bottom: 0;
     @include mq(tab) {
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 1.74;
-        }
-    
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.74;
+    }
+
     @include mq(desk) {
         font-size: 16px;
         line-height: 1.76;

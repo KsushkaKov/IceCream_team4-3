@@ -2,6 +2,7 @@
     padding-top: 60px;
     background-color: $backgroundColor;
 }
+
 .about__label {
     font-family: 'Montserrat';
     font-weight: 700;
@@ -10,7 +11,7 @@
     letter-spacing: 0.04em;
     text-align: center;
     text-transform: uppercase;
-    
+
     margin-top: 0;
     margin-bottom: 12px;
 
@@ -19,11 +20,12 @@
         font-size: 22px;
         line-height: 1.23;
     }
-     
+
     @media screen and (min-width: $desktop) {
         font-size: 30px;
     }
 }
+
 .about__title {
     font-family: 'Seymour One';
     font-size: 30px;
@@ -36,49 +38,55 @@
         font-size: 34px;
         letter-spacing: 0.06em;
     }
-    
+
     @media screen and (min-width: $desktop) {
         font-size: 36px;
     }
 }
+
 .about__list-wrap {
     position: relative;
-        padding-top: 372px;
-        display: flex;
-        flex-direction: column;
+    padding-top: 372px;
+    display: flex;
+    flex-direction: column;
 
-   @include mq(mob-only) {
+    @include mq(mob-only) {
         align-items: center;
         justify-content: center;
     }
+
     @include mq(tab-only) {
         padding: 80px 20px 0px 385px;
         justify-content: left;
     }
-     @include mq(desk) {
+
+    @include mq(desk) {
         padding: 172px 105px 0px 600px;
         justify-content: left;
     }
 
-        &::before {
-            content: '';
-            background-color: $acentColor;
-            width: 279px;
-            height: 279px;
-            border-radius: 50%;
-            position: absolute;
-            top: 32px;
-            left: 50%;
+    &::before {
+        content: '';
+        background-color: $acentColor;
+        width: 279px;
+        height: 279px;
+        border-radius: 50%;
+        position: absolute;
+        top: 32px;
+        left: 50%;
+
         @include mq(mob-only) {
             transform: translateX(-50%);
         }
+
         @include mq(tab-only) {
             width: 334px;
             height: 334px;
 
-            top: 72px; 
+            top: 72px;
             left: 17px;
         }
+
         @include mq(desk) {
             width: 500px;
             height: 500px;
@@ -86,39 +94,43 @@
             top: 82px;
             left: 0;
         }
-       }
-       &::after {
-            content: '';
-            background-image: url(..//images/about/about-cow-mobile-@1X-280x279-min.png);
-            width: 279px;
-            height: 279px;
-            background-size: cover;
-            position: absolute;
-            top: 54px;
-            left: 50%;
-            z-index: 2;
-            
+    }
+
+    &::after {
+        content: '';
+        background-image: url(..//images/about/about-cow-mobile-@1X-279x279-min.png);
+        width: 279px;
+        height: 279px;
+        background-size: cover;
+        position: absolute;
+        top: 54px;
+        left: 50%;
+        z-index: 2;
+
         @include retina {
-            background-image: url(..//images/about/about-cow-mobile-@2X-560x558-min.png);
+            background-image: url(..//images/about/about-cow-mobile-@2X-558x558-min.png);
         }
 
         @include mq(mob-only) {
             transform: translateX(-50%);
         }
-            @include mq(tab-only) {
-                background-image: url(..//images/about/about-cow-tablet-@1X-340x339-min.png);
 
-                top: 98px;
-                left: 17px;
+        @include mq(tab-only) {
+            background-image: url(..//images/about/about-cow-tablet-@1X-334x330-min.png);
 
-                width: 334px;
-                height: 330px;
-                    @include retina {
-                        background-image: url(..//images/about/about-cow-tablet-@2X-680x678-min.png);
+            top: 98px;
+            left: 17px;
+
+            width: 334px;
+            height: 330px;
+
+            @include retina {
+                background-image: url(..//images/about/about-cow-tablet-@2X-668x660-min.png);
+            }
         }
-        }
+
         @include mq(desk) {
-            background-image: url(..//images/about/about-cow-desktop-@1X-516x516-min.png);
+            background-image: url(..//images/about/about-cow-desktop-@1X-490x490-min.png);
 
             top: 121px;
             left: 0;
@@ -126,13 +138,13 @@
             width: 490px;
             height: 490px;
 
-                    @include retina {
-                        background-image: url(..//images/about/about-cow-desktop-@1X-516x516-min.png);
-        }
+            @include retina {
+                background-image: url(..//images/about/about-cow-desktop-@2X-980x980-min.png);
+            }
         }
 
 
-       }
+    }
 
 
 }
@@ -145,6 +157,7 @@
     line-height: 1.76;
     letter-spacing: 0.04em;
     margin-top: 0;
+
     @include mq(tab) {
         text-align: left;
     }
@@ -152,54 +165,60 @@
 
 .about__first-item {
     margin-bottom: 4px;
-        @include mq(tab) {
-            margin-bottom: 8px;
-            }
-        @include mq(desk) {
-            font-size: 16px;
-            }
+
+    @include mq(tab) {
+        margin-bottom: 8px;
+    }
+
+    @include mq(desk) {
+        font-size: 16px;
+    }
 }
 
 .about__second-item {
     line-height: 1.62;
     margin-bottom: 20px;
-        @include mq(tab) {
-            line-height: 1.76;
-            margin-bottom: 8px;
-        }
-        @include mq(desk) {
-            line-height: 1.94;
-            font-size: 14px;
-            }
-}
-
-.about__last-item {
-    @include mq(mob-only) {
-        display: none;
-    }
 
     @include mq(tab) {
-        line-height: 1.94;
-        margin-bottom: 48px;
+        line-height: 1.76;
+        margin-bottom: 8px;
     }
+
     @include mq(desk) {
-        font-size: 14px;
-    }
-}
-.about__button {
-    width: 164px;
-    height: 42px;
-    padding: 12px, 34px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-family: 'Montserrat';
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.28;
-
-    border: none;
-    
-}
+        line-height: 1.94;
+            font-size: 14px;
+        }
+        }
+        
+        .about__last-item {
+            @include mq(mob-only) {
+                display: none;
+            }
+        
+            @include mq(tab) {
+                line-height: 1.94;
+                margin-bottom: 48px;
+            }
+        
+            @include mq(desk) {
+                font-size: 14px;
+            }
+        }
+        
+        .about__button {
+            width: 164px;
+            height: 42px;
+            padding: 12px, 34px;
+        
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 1.28;
+        
+            border: none;
+        
+        }
