@@ -379,27 +379,31 @@
 
 .products__btn {
   display: block;
+  position: absolute;
   margin: 0 auto;
+  padding: 0;
   margin-bottom: 20px;
-  width: 40px;
+  top: 50%;
+    left: 50%;
+    transform: translate(-15px, 96px);
   border: none;
   background-color: transparent;
   cursor: pointer;
   transition: color $timeDuration;
 
-  &:active,
-  &:hover,
-  &:focus {
-    color: $acentColor;
-  }
-
-  &::before {
-    content: '\27F6';
-    color: $secondaryColorText;
-    transform: rotate(0);
-  }
-
   @media screen and (min-width: $desktop) {
     margin-bottom: 60px;
+  }
+}
+
+.modal-btn__icon {
+  display: block;
+  width: 40px;
+  color: currentColor;
+  transition: fill $timeDuration;
+
+  &:hover,
+  &:focus {
+    fill: $acentColor;
   }
 }
