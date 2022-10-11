@@ -5,11 +5,9 @@
   align-items: center;
   justify-content: center;
   border: none;
-  margin-right: 20px;
   margin-left: auto;
-  color: #fff;
-  fill: currentColor;
-  background-color: $backgroundColor;
+  background-color: transparent;
+  fill: $pureWhiteColor;
 
   @media screen and (min-width: 768px) {
     width: 32px;
