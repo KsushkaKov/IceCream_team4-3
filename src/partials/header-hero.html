@@ -1,39 +1,40 @@
 <header id="home">
-  <section class="container">
-    <a href="" class="logo">
-      <picture>
-        <source
-          media="(min-width:1200px)"
-          srcset="
-            ./images/header/logo-L.png    1x,
-            ./images/header/logo-L@2x.png 2x
-          "
-          width="100%"
-          type="image/png"
-        />
-        <source
-          media="(min-width:768px)"
-          srcset="
-            ./images/header/logo-m.png    1x,
-            ./images/header/logo-m@2x.png 2x
-          "
-          width="100%"
-          type="image/png"
-        />
-        <source
-          media="(min-width:480px)"
-          srcset="
-            ./images/header/logo-s.png    1x,
-            ./images/header/logo-s@2x.png 2x
-          "
-          width="100%"
-          type="image/png"
-        />
-        <img src="./images/header/logo-s.png" alt="Логотип" width="100%" />
-      </picture>
-    </a>
-    <div class="positionong-container">
+  <section class="container positioning-container">
+    <div class="positioning-container">
       <div class="header">
+        <a href="" class="logo">
+          <picture>
+            <source
+              media="(min-width:1200px)"
+              srcset="
+                ./images/header/logo-L.png    1x,
+                ./images/header/logo-L@2x.png 2x
+              "
+              width="100%"
+              type="image/png"
+            />
+            <source
+              media="(min-width:768px)"
+              srcset="
+                ./images/header/logo-m.png    1x,
+                ./images/header/logo-m@2x.png 2x
+              "
+              width="100%"
+              type="image/png"
+            />
+            <source
+              media="(min-width:320px)"
+              srcset="
+                ./images/header/logo-s.png    1x,
+                ./images/header/logo-s@2x.png 2x
+              "
+              width="100%"
+              type="image/png"
+            />
+            <img src="./images/header/logo-s.png" alt="Логотип" width="100%" />
+          </picture>
+        </a>
+
         <ul class="header__list">
           <li class="header__item">
             <a href="#home" class="header__link">Home</a>
@@ -57,7 +58,11 @@
             <use href="./images/header.svg#icon-mobile-menu"></use>
           </svg>
         </button>
-        <button class="header__button">Buy now ></button>
+        <button class="header__button">Buy now  
+        <svg class="header__button-icon" width="5px" height="9px">
+            <use href="./images/header.svg#icon-inbutton"></use>
+          </svg>
+          </button>
       </div>
       <div class="highlights">
         <ul class="highlights__list">
@@ -73,53 +78,33 @@
           </li>
         </ul>
       </div>
+
       <section class="hero__container">
         <div class="hero">
-          <h1 class="hero__title">ice cream made with passion</h1>
+          <h1 class="hero__title">
+            ice cream made with <span class="hero__title--span">passion</span>
+          </h1>
           <ul class="hero__list">
             <li class="hero__item">
-              <button class="hero__button--products">Products</button>
+              <a href="#ourproducts" class="hero__link--products">Products</a>
             </li>
             <li class="hero__item">
-              <button class="hero__button--howmade">How it’s made?</button>
+              <a href="#howmade" class="hero__link--howmade">How it’s made?</a>
             </li>
           </ul>
-          <div>
+          <div class="hero__text--div">
             <p class="hero__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et
             </p>
+            <a href="#ourproducts" class="hero__text--link">
+            <svg width="40px" height="20px">
+            <use href="./images/header.svg#icon-arrow"></use>
+          </svg>
+            </a>
           </div>
         </div>
-        <picture class="hero__img--icecream">
-        <source
-          media="(min-width:1200px)"
-          srcset="
-            ./images/header/icecream-l.png    1x,
-            ./images/header/icecream-l@2x.png 2x
-          "
-          type="image/png"
-        />
-        <source
-          media="(min-width:768px)"
-          srcset="
-            ./images/header/icecream-m.png    1x,
-            ./images/header/icecream-m@2x.png 2x
-          "
-          type="image/png"
-        />
-        <source
-          media="(min-width:480px)"
-          srcset="
-            ./images/header/icecream-s.png    1x,
-            ./images/header/icecream-s@2x.png 2x
-          "
-          type="image/png"
-        />
-        <img src="./images/header/icecream-s.png" />
-      </picture>
-      </section>
-
+        
 
       <picture class="hero__img--dotes">
         <source
@@ -139,7 +124,7 @@
           type="image/png"
         />
         <source
-          media="(min-width:480px)"
+          media="(min-width:320px)"
           srcset="
             ./images/header/dotes-S.png    1x,
             ./images/header/dotes-S@2x.png 2x
@@ -148,7 +133,34 @@
         />
         <img src="./images/header/dotes-S.png" width="100%" />
       </picture>
-
+      <picture class="hero__img--icecream">
+          <source
+            media="(min-width:1200px)"
+            srcset="
+              ./images/header/icecream-l.png    1x,
+              ./images/header/icecream-l@2x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="
+              ./images/header/icecream-m.png    1x,
+              ./images/header/icecream-m@2x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(min-width:320px)"
+            srcset="
+              ./images/header/icecream-s.png    1x,
+              ./images/header/icecream-s@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img src="./images/header/icecream-s.png" />
+        </picture>
+      </section>
       <!-- burger menu -->
 
       <div class="menu-container js-menu-container" id="mobile-menu">
@@ -166,7 +178,6 @@
           src="./images/header/logo-s.png"
           alt="Логотип"
         />
-
         <ul class="list mobile-nav__list">
           <li class="mobile-nav__item">
             <a href="#" class="mobile-nav__link">Home</a>
@@ -193,4 +204,3 @@
     </div>
   </section>
 </header>
-

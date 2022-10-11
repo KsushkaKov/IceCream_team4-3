@@ -14,8 +14,9 @@
 
 .hero {
   margin-top: 62px;
-  margin-right: auto;
+  margin-right: 0;
   margin-left: 0;
+  margin-bottom: 0;
 
   @media screen and (min-width: 768px) {
     margin-top: 0;
@@ -44,7 +45,18 @@
     padding-top: 48px;
   }
 }
-
+.hero__title--span {
+  font-size: 34px;
+  line-height: 96.5%;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 13px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 38px;
+    line-height: 1.2;
+  }
+}
 .hero__list {
   display: flex;
   gap: 8px;
@@ -59,7 +71,30 @@
   }
 }
 
-.hero__button--products {
+.hero__item:hover,
+.hero__item:focus {
+  .hero__link--products {
+    border: 2px solid $btnFocusColor;
+  }
+}
+.hero__item:focus {
+  .hero__link--products {
+    color: $mainColorText;
+  }
+}
+
+.hero__item:hover {
+  .hero__link--howmade {
+    color: $btnFocusColor;
+  }
+}
+.hero__item:focus {
+  .hero__link--howmade {
+    color: $mainColorText;
+  }
+}
+
+.hero__link--products {
   width: 62px;
   height: 24px;
   background-color: transparent;
@@ -73,6 +108,8 @@
   align-items: center;
   justify-content: center;
   color: $secondaryColorText;
+  position: relative;
+  z-index: 3;
 
   @media screen and (min-width: 1200px) {
     width: 134px;
@@ -82,7 +119,7 @@
   }
 }
 
-.hero__button--howmade {
+.hero__link--howmade {
   width: 83px;
   height: 24px;
   background-color: transparent;
@@ -98,6 +135,8 @@
 
   color: $acentColor;
 
+  position: relative;
+  z-index: 3;
   @media screen and (min-width: 1200px) {
     width: 154px;
     height: 40px;
@@ -105,25 +144,72 @@
     line-height: 17px;
   }
 }
-
+.hero__text--div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  width: 100%;
+  z-index: 5;
+}
 .hero__text {
-  margin: 0;
   font-weight: 400;
   font-size: 12px;
   line-height: 140%;
-  max-width: 151px;
+  max-width: 336px;
+  padding-top: 56px;
+  padding-left: 185px;
 
   @media screen and (min-width: 1200px) {
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
-    max-width: 200px;
+    max-width: 459px;
+    padding-top: 109px;
+    padding-left: 225px;
   }
   @media screen and (max-width: 767px) {
     display: none;
   }
 }
+.hero__text::before {
+  content: '';
+      background-image: url(..//images/header/icecream-before-m.png);
+      width: 152px;
+      height: 152px;
+      background-size: contain;
+      position: absolute;
+      top: 20%;
+      left: 0;
+      display: block;
+      z-index: 2;
+      @include retina {
+        background-image: url(..//images/header/icecream-before-m@2x.png);
+      }
 
+      @media screen and (min-width: $desktop) {
+        width: 225px;
+        height: 225px;
+        top: 17%;
+        left: -14px;
+        background-image: url(..//images/header/icecream-before-l.png);
+        @include retina {
+          background-image: url(..//images/header/icecream-before-l.png);
+        }
+      }
+}
+.hero__text--link {
+  width: 40px;
+  fill: $mainColorText;
+  padding-left: 185px;
+  @media screen and (min-width: $desktop) {
+    padding-left: 225px;
+    margin-top: 8px;
+  } 
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
 .highlights {
   position: absolute;
   display: flex;
@@ -169,33 +255,33 @@
   color: $secondaryColorText;
 }
 
-.positionong-container {
+.positioning-container {
   position: relative;
   width: 100%;
+  padding: 0;
 }
 
 .hero__img--dotes {
   position: absolute;
+  left: 0;
   bottom: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 1;
 }
 
 .hero__img--icecream {
-
   position: absolute;
-  left: 26%;
+  left: 9%;
   bottom: 0;
-  z-index: 100;
-  
+  z-index: 2;
 
   @media screen and (min-width: 768px) {
-    left: 54%;
+    left: 47%;
     bottom: 0;
- }
+  }
 
   @media screen and (min-width: 1200px) {
-    left: 54%;
+    left: 47%;
     bottom: 0;
   }
 }
