@@ -3,17 +3,14 @@
   padding-bottom: 60px;
   background-color: $pureWhiteColor;
   background-image: url(../images/products/background-s-@1x.png);
-  background-size: contain;
-  background-repeat: repeat-y;
-  
+  background-size: cover;
+  background-repeat: no-repeat;
 
   @include retina {
     background-image: url(../images/products/background-s-@2x.png);
   }
 
   @media screen and (min-width: $tablet) {
-    background-size: cover;
-    background-repeat: no-repeat;
     background-image: url(..//images/products/background-m-@1x.png);
 
     @include retina {
@@ -22,8 +19,6 @@
   }
 
   @media screen and (min-width: $desktop) {
-    background-size: cover;
-    background-repeat: no-repeat;
     background-image: url(..//images/products/background-l-@1x.png);
 
     @include retina {
@@ -384,20 +379,26 @@
   padding: 0;
   margin-bottom: 20px;
   top: 50%;
-    left: 50%;
-    transform: translate(-15px, 96px);
+  left: 50%;
+  transform: translate(-50%, 170px);
   border: none;
   background-color: transparent;
   cursor: pointer;
   transition: color $timeDuration;
 
+@media screen and (min-width: $tablet) {
+    transform: translate(-50%, 174px);
+  }
+
   @media screen and (min-width: $desktop) {
+    transform: translate(-50%, 187px);
     margin-bottom: 60px;
   }
 }
 
 .modal-btn__icon {
   display: block;
+  height: 20px;
   width: 40px;
   color: currentColor;
   transition: fill $timeDuration;
