@@ -71,34 +71,11 @@
   }
 }
 
-.hero__item:hover,
-.hero__item:focus {
-  .hero__link--products {
-    border: 2px solid $btnFocusColor;
-  }
-}
-.hero__item:focus {
-  .hero__link--products {
-    color: $mainColorText;
-  }
-}
-
-.hero__item:hover {
-  .hero__link--howmade {
-    color: $btnFocusColor;
-  }
-}
-.hero__item:focus {
-  .hero__link--howmade {
-    color: $mainColorText;
-  }
-}
-
 .hero__link--products {
   width: 62px;
   height: 24px;
   background-color: transparent;
-  border: 2px solid #f8d24e;
+  border: 2px solid $acentColor;
   border-radius: 8px;
 
   font-weight: 600;
@@ -110,7 +87,13 @@
   color: $secondaryColorText;
   position: relative;
   z-index: 3;
-
+  &:hover {
+    border: 2px solid $btnFocusColor
+  }
+  &:focus {
+    color: $mainColorText;
+    border: 2px solid $btnFocusColor;
+  }
   @media screen and (min-width: 1200px) {
     width: 134px;
     height: 42px;
@@ -137,6 +120,12 @@
 
   position: relative;
   z-index: 3;
+  &:hover {
+    color: $btnFocusColor
+  }
+  &:focus {
+    color: $mainColorText
+  }
   @media screen and (min-width: 1200px) {
     width: 154px;
     height: 40px;
@@ -202,6 +191,13 @@
   width: 40px;
   fill: $mainColorText;
   padding-left: 185px;
+  &:hover,
+  &:focus {
+    svg {
+    width: 50px
+  }
+  }
+
   @media screen and (min-width: $desktop) {
     padding-left: 225px;
     margin-top: 8px;
@@ -259,6 +255,7 @@
   position: relative;
   width: 100%;
   padding: 0;
+  max-width: 1200px;
 }
 
 .hero__img--dotes {
