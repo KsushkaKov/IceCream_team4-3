@@ -1,2 +1,0 @@
-(()=>{const e={openModalBtn:document.querySelector("[data-modal-icecream-open]"),closeModalBtn:document.querySelector("[data-modal-icecream-close]"),modal:document.querySelector("[data-modal-icecream]")};function o(){e.modal.classList.toggle("backdrop-products--is-hidden")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})();
-//# sourceMappingURL=index.0a2256ff.js.map
