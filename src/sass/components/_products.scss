@@ -147,6 +147,7 @@
   padding: 0 40px;
   min-height: 420px;
   border-radius: 24px;
+
   @media screen and (min-width: $tablet) {
     width: 224px;
     height: 428px;
@@ -403,10 +404,13 @@
   color: currentColor;
   transition: fill $timeDuration;
 
-  &:hover,
-  &:focus {
+  &:hover {
     fill: $acentColor;
     width: 100px;
+  }
+
+  &:focus {
+    transform: scale(1, 1.2);
   }
 
   &--icecoffee {
