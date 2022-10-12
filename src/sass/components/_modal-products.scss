@@ -133,13 +133,8 @@
   border-radius: 50%;
   position: absolute;
   display: block;
-  background: linear-gradient(
-      0deg,
-      rgba(156, 190, 143, 0.7),
-      rgba(156, 190, 143, 0.7)
-    ),
-    #d9d9d9;
-  box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+  background: linear-gradient(0deg, #9cbe8fb3, #9cbe8fb3), #d9d9d9;
+  box-shadow: 0px 5.34219px 20.0332px #0a881740;
 
   @media screen and (min-width: $tablet) {
     transform: translate(50%, 75%);
@@ -147,7 +142,12 @@
 
   &--icecoffee {
     background: linear-gradient(0deg, #f2d675, #e7b818), #d9d9d9;
-    box-shadow: 0px 5.34219px 20.0332px rgba(167, 193, 17, 0.25);
+    box-shadow: 0px 5.34219px 20.0332px #a7c11140;
+  }
+
+  &--milkshake {
+    background: linear-gradient(0deg, #f1a45c, #ce5a12), #d9d9d9;
+    box-shadow: 0px 5.34219px 20.0332px #e09a5540;
   }
 }
 
