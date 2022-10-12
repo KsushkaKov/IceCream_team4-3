@@ -58,7 +58,7 @@
             <use href="./images/header.svg#icon-mobile-menu"></use>
           </svg>
         </button>
-        <button class="header__button">
+        <button class="header__button" type="button" data-modal-buy-open>
           Buy now
           <svg class="header__button-icon" width="5px" height="9px">
             <use href="./images/header.svg#icon-inbutton"></use>
@@ -80,6 +80,7 @@
         </ul>
       </div>
 
+      <!-- hero -->
       <section class="hero__container">
         <div class="hero">
           <h1 class="hero__title">
@@ -106,6 +107,7 @@
           </div>
         </div>
 
+        <!-- background images -->
         <picture class="hero__img--dotes">
           <source
             media="(min-width:1200px)"
@@ -161,6 +163,8 @@
           <img src="./images/header/icecream-s.png" />
         </picture>
       </section>
+
+
       <!-- burger menu -->
 
       <div class="menu-container js-menu-container" id="mobile-menu">
@@ -192,13 +196,74 @@
             <a href="#contact" class="mobile-nav__link">Contact</a>
           </li>
         </ul>
-        <button class="mobile-nav__button">
+        <button class="mobile-nav__button" type="button" data-modal-buy-open>
           Buy now
           <svg class="header__button-icon" width="5px" height="9px">
             <use href="./images/header.svg#icon-inbutton"></use>
           </svg>
         </button>
       </div>
+
+      <!-- modal -->
+<div class="backdrop-hero backdrop-hero--is-hidden" data-modal-buy>
+  <div class="modal-buy">
+    <button class="modal-close-btn" type="button" data-modal-buy-close>
+        <svg class="modal-close-btn__icon" width="11" height="11">
+          <use href="./images/header.svg#icon-closeblack"></use>
+        </svg>
+      </button>
+        <ul class="modal-buy__list">
+        <li class="modal-buy__item">
+            <span class="modal-buy__item-wrap modal-buy__item-wrap--icecream"></span>
+            <h3 class="modal-buy__title modal-buy__title--icecream">ice cream</h3>
+        </li>
+        <li class="modal-buy__item">
+            <span class="modal-buy__item-wrap modal-buy___item-wrap--icecoffee"></span>
+            <h3 class="modal-buy__title modal-buy__title--icecoffee">ice coffee</h3>
+            </li>
+        <li class="modal-buy__item">
+            <span class="modal-buy__item-wrap modal-buy__item-wrap--milkshake"></span>
+            <h3 class="modal-buy__title modal-buy__title--milkshake">milkshakes</h3>
+        </li>
+      </ul>
+      <form action="" class="modal-buy__form">
+      <ul class="modal-buy__form-list">
+          <li class="modal-buy__form-item">
+              <label for="name" class="form__label"
+                  >
+                  <input
+                    type="text"
+                    class="form__input "
+                    name="name"
+                    id="name"
+                    placeholder="Name" />
+                  </li>
+          <li class="mmodal-buy__form-item">
+              <label for="phone" class="form__label"></label>
+                <input
+                  type="tel"
+                  class="form__input "
+                  name="phone"
+                  id="phone"
+                  placeholder="Phone"
+                />
+          </li>
+          <li class="modal-buy__form-item">
+              <label for="text" class="form__label"></label>
+                <textarea
+                  name="text"
+                  id="text"
+                  placeholder="Comment"
+                  class="form__input form__input--text"
+                ></textarea>
+          </li>
+      </ul>
+      <button class="form__button" type="button">Submit</button>
+    </form>
+  </div>
+    </div>
+
+      <!-- scripts -->
       <script
         defer
         src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
@@ -206,6 +271,7 @@
         crossorigin="anonymous"
       ></script>
       <script src="../js/mobile-menu.js"></script>
+      <script src="../js/modal-buy.js"></script>
     </div>
   </section>
 </header>
