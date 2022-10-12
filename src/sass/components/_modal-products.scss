@@ -110,16 +110,13 @@
 
   &--icecoffee {
     &::after {
-      background-image: url(..//images/products/modal-prod-s@1x.png);
-      @include retina {
-        background-image: url(..//images/products/modal-prod-s@2x.png);
-        @media screen and (min-width: $tablet) {
-          background-image: url(..//images/products/modal-prod-m@1x.png);
-          @include retina {
-            background-image: url(..//images/products/modal-prod-m@2x.png);
-          }
-        }
-      }
+      background-image: url(..//images/products/icecoffee.png);
+    }
+  }
+
+  &--milkshake {
+    &::after {
+      background-image: url(..//images/products/milkshake.png);
     }
   }
 }
@@ -146,7 +143,7 @@
   }
 
   &--milkshake {
-    background: linear-gradient(0deg, #f1a45c, #ce5a12), #d9d9d9;
+    background: linear-gradient(0deg, #ce844f, #e7a15f), #d9d9d9;
     box-shadow: 0px 5.34219px 20.0332px #e09a5540;
   }
 }
