@@ -107,6 +107,21 @@
       }
     }
   }
+
+  &--icecoffee {
+    &::after {
+      background-image: url(..//images/products/modal-prod-s@1x.png);
+      @include retina {
+        background-image: url(..//images/products/modal-prod-s@2x.png);
+        @media screen and (min-width: $tablet) {
+          background-image: url(..//images/products/modal-prod-m@1x.png);
+          @include retina {
+            background-image: url(..//images/products/modal-prod-m@2x.png);
+          }
+        }
+      }
+    }
+  }
 }
 
 .modal-products__img-wrap {
@@ -128,6 +143,11 @@
 
   @media screen and (min-width: $tablet) {
     transform: translate(50%, 75%);
+  }
+
+  &--icecoffee {
+    background: linear-gradient(0deg, #f2d675, #e7b818), #d9d9d9;
+    box-shadow: 0px 5.34219px 20.0332px rgba(167, 193, 17, 0.25);
   }
 }
 
@@ -155,6 +175,14 @@
   @media screen and (min-width: $tablet) {
     width: 65px;
     height: 90px;
+  }
+
+  &--icecoffee {
+    border: 2px solid $secondCardColor;
+  }
+
+  &--milkshake {
+    border: 2px solid $thirdCardColor;
   }
 }
 
@@ -185,6 +213,16 @@
     width: 53px;
     height: 53px;
     transform: translate(7%, -86%);
+  }
+
+  &--icecoffee {
+    background: $secondCardColor;
+    border: 2px solid $secondCardColor;
+  }
+
+  &--milkshake {
+    background: $thirdCardColor;
+    border: 2px solid $thirdCardColor;
   }
 }
 
