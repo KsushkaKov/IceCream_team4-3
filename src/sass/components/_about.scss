@@ -53,6 +53,8 @@
     @include mq(mob-only) {
         align-items: center;
         justify-content: center;
+        padding-left: 35px;
+        padding-right: 35px;
     }
 
     @include mq(tab-only) {
@@ -178,6 +180,7 @@
 .about__second-item {
     line-height: 1.62;
     margin-bottom: 20px;
+    letter-spacing: 0;
 
     @include mq(tab) {
         line-height: 1.76;
