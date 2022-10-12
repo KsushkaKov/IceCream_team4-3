@@ -132,7 +132,7 @@
             background-image: url(..//images/about/about-cow-desktop-@1X-490x490-min.png);
 
             top: 121px;
-            left: 0;
+            left: 5px;
 
             width: 490px;
             height: 490px;
@@ -219,10 +219,20 @@
             line-height: 1.28;
         
             border: none;
-        
+            @include mq(desk) {
+            &:hover {
+                background-color: $btnFocusColor
+            }
+            
+            &:focus {
+                color: $mainColorText;
+                background-color: $btnFocusColor;
+                fill: currentColor;
+            }
+            }
         }
         .about__icon {
             fill: $secondaryColorText;
-            z-index: 100;
+            z-index: 3;
             margin-left: 5px;
         }
