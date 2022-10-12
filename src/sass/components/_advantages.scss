@@ -5,12 +5,12 @@
 
     @include mq(tab) {
         padding-top: 48px;
-        padding-bottom: 204px;
+        padding-bottom: 40px;
     }
 
     @include mq(desk) {
         padding-top: 60px;
-        padding-bottom: 180px;
+        padding-bottom: 86px;
     }
 
 }
