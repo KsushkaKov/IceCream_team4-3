@@ -7,7 +7,7 @@
   background-color: rgba(10, 136, 23, 0.25);
   opacity: 1;
   transition: opacity 0.25s linear, visibility 0.25s linear;
-  z-index: 10;
+  z-index: 550;
 }
 .backdrop-hero--is-hidden {
   opacity: 0;
@@ -29,7 +29,7 @@
   box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 1px rgb(0 0 0 / 14%),
     0 2px 1px rgb(0 0 0 / 20%);
   border-radius: 10px;
-  z-index: 25;
+  z-index: 555;
   @media screen and (min-width: $tablet) {
     width: 568px;
     padding: 32px 55px;
