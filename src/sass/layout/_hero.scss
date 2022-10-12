@@ -273,7 +273,12 @@
   z-index: 1;
 }
 
+.hero__img--dotes-img {
+  width: 100%;
+  z-index: 1;
+}
 .hero__img--icecream {
+  width: 100%;
   position: absolute;
   left: 9%;
   bottom: 0;
@@ -282,9 +287,11 @@
   @media screen and (min-width: 768px) {
     left: 47%;
     bottom: 0;
+    width: 100%;
   }
 
   @media screen and (min-width: 1200px) {
+    width: 100%;
     left: 47%;
     bottom: 0;
   }

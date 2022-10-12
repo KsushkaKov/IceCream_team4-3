@@ -10,7 +10,6 @@
                 ./images/header/logo-L.png    1x,
                 ./images/header/logo-L@2x.png 2x
               "
-              width="100%"
               type="image/png"
             />
             <source
@@ -19,7 +18,6 @@
                 ./images/header/logo-m.png    1x,
                 ./images/header/logo-m@2x.png 2x
               "
-              width="100%"
               type="image/png"
             />
             <source
@@ -28,10 +26,13 @@
                 ./images/header/logo-s.png    1x,
                 ./images/header/logo-s@2x.png 2x
               "
-              width="100%"
               type="image/png"
             />
-            <img src="./images/header/logo-s.png" alt="Логотип" width="100%" />
+            <img
+              class="logo-img"
+              src="./images/header/logo-s.png"
+              alt="Логотип"
+            />
           </picture>
         </a>
 
@@ -133,7 +134,11 @@
             "
             type="image/png"
           />
-          <img src="./images/header/dotes-S.png" width="100%" />
+          <img
+            class="hero__img--dotes-img"
+            src="./images/header/dotes-S.png"
+            alt="крапочки"
+          />
         </picture>
         <picture class="hero__img--icecream">
           <source
@@ -160,10 +165,9 @@
             "
             type="image/png"
           />
-          <img src="./images/header/icecream-s.png" />
+          <img src="./images/header/icecream-s.png" alt="морозиво" />
         </picture>
       </section>
-
 
       <!-- burger menu -->
 
@@ -196,7 +200,7 @@
             <a href="#contact" class="mobile-nav__link">Contact</a>
           </li>
         </ul>
-        <button class="mobile-nav__button" type="button" data-modal-buy-open>
+        <button class="mobile-nav__button" type="button" data-modal-buy-open2>
           Buy now
           <svg class="header__button-icon" width="5px" height="9px">
             <use href="./images/header.svg#icon-inbutton"></use>
@@ -205,64 +209,80 @@
       </div>
 
       <!-- modal -->
-<div class="backdrop-hero backdrop-hero--is-hidden" data-modal-buy>
-  <div class="modal-buy">
-    <button class="modal-close-btn" type="button" data-modal-buy-close>
-        <svg class="modal-close-btn__icon" width="11" height="11">
-          <use href="./images/header.svg#icon-closeblack"></use>
-        </svg>
-      </button>
-      <h2 class="modal-buy__main-title">Buy now</h2>
-        <ul class="modal-buy__list">
-        <li class="modal-buy__item">
-            <span class="modal-buy__item-wrap modal-buy__item-wrap--icecream"></span>
-            <h3 class="modal-buy__title modal-buy__title--icecream">ice cream</h3>
-        </li>
-        <li class="modal-buy__item">
-            <span class="modal-buy__item-wrap modal-buy__item-wrap--icecoffee"></span>
-            <h3 class="modal-buy__title modal-buy__title--icecoffee">ice coffee</h3>
+      <div class="backdrop-hero backdrop-hero--is-hidden" data-modal-buy>
+        <div class="modal-buy">
+          <button
+            class="header__modal-close-btn"
+            type="button"
+            data-modal-buy-close
+          >
+            <svg class="header__modal-close-btn__icon" width="11" height="11">
+              <use href="./images/header.svg#icon-closeblack"></use>
+            </svg>
+          </button>
+          <h2 class="modal-buy__main-title">Buy now</h2>
+          <ul class="modal-buy__list">
+            <li class="modal-buy__item">
+              <span
+                class="modal-buy__item-wrap modal-buy__item-wrap--icecream"
+              ></span>
+              <h3 class="modal-buy__title modal-buy__title--icecream">
+                ice cream
+              </h3>
             </li>
-        <li class="modal-buy__item">
-            <span class="modal-buy__item-wrap modal-buy__item-wrap--milkshake"></span>
-            <h3 class="modal-buy__title modal-buy__title--milkshake">milkshake</h3>
-        </li>
-      </ul>
-      <form action="" class="modal-buy__form">
-      <ul class="modal-buy__form-list">
-          <li class="modal-buy__form-item">
-              <label for="name" class="form__label"
-                  >
-                  <input
-                    type="text"
-                    class="form__input "
-                    name="name"
-                    id="name"
-                    placeholder="Name" />
-                  </li>
-          <li class="mmodal-buy__form-item">
-              <label for="phone" class="form__label"></label>
+            <li class="modal-buy__item">
+              <span
+                class="modal-buy__item-wrap modal-buy__item-wrap--icecoffee"
+              ></span>
+              <h3 class="modal-buy__title modal-buy__title--icecoffee">
+                ice coffee
+              </h3>
+            </li>
+            <li class="modal-buy__item">
+              <span
+                class="modal-buy__item-wrap modal-buy__item-wrap--milkshake"
+              ></span>
+              <h3 class="modal-buy__title modal-buy__title--milkshake">
+                milkshake
+              </h3>
+            </li>
+          </ul>
+          <form action="URL" class="modal-buy__form">
+            <ul class="modal-buy__form-list">
+              <li class="modal-buy__form-item">
+                <label for="header__name" class="form__label"></label>
+                <input
+                  type="text"
+                  class="header-form__input"
+                  name="name"
+                  id="header__name"
+                  placeholder="Name"
+                />
+              </li>
+              <li class="modal-buy__form-item">
+                <label for="header__phone" class="form__label"></label>
                 <input
                   type="tel"
-                  class="form__input "
+                  class="header-form__input"
                   name="phone"
-                  id="phone"
+                  id="header__phone"
                   placeholder="Phone"
                 />
-          </li>
-          <li class="modal-buy__form-item">
-              <label for="text" class="form__label"></label>
+              </li>
+              <li class="modal-buy__form-item">
+                <label for="header__text" class="form__label"></label>
                 <textarea
                   name="text"
-                  id="text"
+                  id="header__text"
                   placeholder="Comment"
-                  class="form__input form__input--text"
+                  class="header-form__input header-form__input--text"
                 ></textarea>
-          </li>
-      </ul>
-      <button class="form__button" type="button">Submit</button>
-    </form>
-  </div>
-    </div>
+              </li>
+            </ul>
+            <button class="form__button" type="button">Submit</button>
+          </form>
+        </div>
+      </div>
 
       <!-- scripts -->
       <script
