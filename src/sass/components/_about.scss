@@ -55,12 +55,12 @@
     }
 
     @include mq(tab-only) {
-        padding: 80px 20px 0px 385px;
+        padding: 80px 20px 5px 385px;
         justify-content: left;
     }
 
     @include mq(desk) {
-        padding: 172px 105px 0px 600px;
+        padding: 172px 105px 92px 600px;
         justify-content: left;
     }
 

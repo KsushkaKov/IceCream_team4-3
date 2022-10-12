@@ -3,11 +3,11 @@
     padding-bottom: 60px;
     background-color: $backgroundColor;
     @include mq(tab) {
-        padding-top: 53px;
+        padding-top: 48px;
         padding-bottom: 204px;
     }
     @include mq(desk) {
-        padding-top: 152px;
+        padding-top: 60px;
         padding-bottom: 180px;
     }
 
