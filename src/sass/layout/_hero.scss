@@ -1,0 +1,284 @@
+.hero__container {
+  margin-left: 20px;
+  height: 392px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 32px;
+    height: 343px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 590px;
+  }
+}
+
+.hero {
+  margin-top: 62px;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+}
+
+.hero__title {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  max-width: 247px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    font-size: 18px;
+    max-width: 181px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 38px;
+    max-width: 367px;
+    padding-top: 48px;
+  }
+}
+.hero__title--span {
+  font-size: 34px;
+  line-height: 96.5%;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 13px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 38px;
+    line-height: 1.2;
+  }
+}
+.hero__list {
+  display: flex;
+  gap: 8px;
+  margin-top: 32px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 28px;
+  }
+}
+
+.hero__link--products {
+  width: 62px;
+  height: 24px;
+  background-color: transparent;
+  border: 2px solid $acentColor;
+  border-radius: 8px;
+
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $secondaryColorText;
+  position: relative;
+  z-index: 3;
+  &:hover {
+    border: 2px solid $btnFocusColor
+  }
+  &:focus {
+    color: $mainColorText;
+    border: 2px solid $btnFocusColor;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 134px;
+    height: 42px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.hero__link--howmade {
+  width: 83px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration-line: underline;
+
+  color: $acentColor;
+
+  position: relative;
+  z-index: 3;
+  &:hover {
+    color: $btnFocusColor
+  }
+  &:focus {
+    color: $mainColorText
+  }
+  @media screen and (min-width: 1200px) {
+    width: 154px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+.hero__text--div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  width: 100%;
+  z-index: 5;
+}
+.hero__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  max-width: 336px;
+  padding-top: 56px;
+  padding-left: 185px;
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    max-width: 459px;
+    padding-top: 109px;
+    padding-left: 225px;
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.hero__text::before {
+  content: '';
+      background-image: url(..//images/header/icecream-before-m.png);
+      width: 152px;
+      height: 152px;
+      background-size: contain;
+      position: absolute;
+      top: 20%;
+      left: 0;
+      display: block;
+      z-index: 2;
+      @include retina {
+        background-image: url(..//images/header/icecream-before-m@2x.png);
+      }
+
+      @media screen and (min-width: $desktop) {
+        width: 225px;
+        height: 225px;
+        top: 17%;
+        left: -14px;
+        background-image: url(..//images/header/icecream-before-l.png);
+        @include retina {
+          background-image: url(..//images/header/icecream-before-l.png);
+        }
+      }
+}
+.hero__text--link {
+  width: 40px;
+  fill: $mainColorText;
+  padding-left: 185px;
+  &:hover,
+  &:focus {
+    svg {
+    width: 50px
+  }
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 225px;
+    margin-top: 8px;
+  } 
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.highlights {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  right: 32px;
+  top: 94px;
+
+  @media screen and (min-width: 1200px) {
+    gap: 16px;
+    right: 16px;
+    top: 126px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.highlights__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  /* identical to box height */
+  text-align: center;
+  color: $mainColorText;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
+}
+
+.highlights__text--span {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $secondaryColorText;
+}
+
+.positioning-container {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  max-width: 1200px;
+}
+
+.hero__img--dotes {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.hero__img--icecream {
+  position: absolute;
+  left: 9%;
+  bottom: 0;
+  z-index: 2;
+
+  @media screen and (min-width: 768px) {
+    left: 47%;
+    bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    left: 47%;
+    bottom: 0;
+  }
+}
