@@ -14,7 +14,7 @@
 }
 
 .footer__title {
-    margin-bottom: 32px;
+    margin-bottom: 42px;
 
     font-weight: 700;
     font-size: 18px;
@@ -23,9 +23,17 @@
     text-transform: uppercase;
 
     @include mq(tab) {
+        margin-bottom: 0;
+
         font-size: 26px;
         line-height: calc(32/26);
         letter-spacing: 0.04em;
+    }
+
+    @include mq(desk) {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: calc(37/30);
     }
 }
 
@@ -38,10 +46,19 @@
     letter-spacing: 0.04em;
 
     @include mq(tab) {
+        margin-top: 9px;
+
         font-size: 48px;
         line-height: calc(59/48);
         letter-spacing: 0.06em;
-        margin-top: 9px;
+    }
+
+    @include mq(desk) {
+        margin-top: 12px;
+
+        font-size: 58px;
+        font-weight: 700;
+        line-height: calc(71/58);
     }
 }
 
@@ -58,8 +75,12 @@
 
     @include mq(tab) {
         padding-top: 68px;
-        padding-bottom: 56px;
         gap: 32px;
+    }
+
+    @include mq(desk) {
+        padding-top: 12px;
+        gap: 40px;  
     }
 }
 
@@ -72,6 +93,15 @@
     letter-spacing: normal;
 
     color: $secondaryColorText;
+
+    @include mq(tab) {
+        font-size: 14px;
+    }
+
+    @include mq(desk) {
+        font-size: 16px;
+        letter-spacing: 0.02em;
+    }
 }
 
 .footer__tel-label {
@@ -99,6 +129,10 @@
         letter-spacing: 0.02em;
     }
 
+    @include mq(desk) {
+        font-size: 12px;
+    }
+
     &::before {
         display: block;
         margin-top: 40px;
@@ -110,8 +144,13 @@
         background-color: #E1E1E1;
 
         @include mq(tab) {
-            margin-top: 0;
+            margin-top: 32px;
             margin-bottom: 14px;
+        }
+
+        @include mq(desk) {
+            margin-top: 54px;
+            margin-bottom: 12px;
         }
     }
 }

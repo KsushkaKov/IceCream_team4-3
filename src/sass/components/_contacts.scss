@@ -2,6 +2,10 @@
     padding-bottom: 40px;
 
     background-color: $backgroundColor;
+
+    @include mq(desk) {
+        padding-bottom: 120px;
+    }
 }
 
 .contacts__container {
@@ -12,6 +16,11 @@
     @include mq(tab) {
         top: -304px;
         margin-bottom: -304px;
+    }
+
+    @include mq(desk) {
+        top: -96px;
+        margin-bottom: -96px;
     }
 
 }
@@ -27,6 +36,11 @@
         gap: 16px;
         justify-content: center;
         margin-bottom: 60px;
+    }
+
+    @include mq(desk) {
+        margin-bottom: 64px;
+        gap: 32px;
     }
 }
 
@@ -50,6 +64,14 @@
         padding-right: 24px;
 
         font-size: 14px;        
+    }
+
+    @include mq(desk) {
+        width: 368px;
+        padding-left: 40px;
+        padding-right: 40px;
+
+        font-size: 16px;
     }
 }
 
@@ -87,6 +109,12 @@
     }
 }
 
+.contacts__working-days {
+    @include mq(desk) {
+        letter-spacing: 0.04em;
+    }
+}
+
 .contacts__working-hours {
     color: $timeColor;
     margin-bottom: 8px;
@@ -102,6 +130,7 @@
 
     @include mq(tab) {
         line-height: 1.83;
+        display: block;
     }
 }
 
@@ -125,20 +154,40 @@
     border: 2px solid $acentColor;
     border-radius: 10px;
     background-color: transparent;
+    outline: none;
 
     font-weight: 600;
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: 0;
 
+    &:hover {
+        border-color: $btnFocusColor;
+    }
+
+    &:focus {
+        border-color: $btnFocusColor;
+        color: $mainColorText;
+    }
+
     &--yellow {
         margin-bottom: 16px;
         background-color: $acentColor;
+
+        &:hover,
+        &:focus {
+            border-color: transparent;
+            background-color: $btnFocusColor;
+        }
     }
 
     @include mq(tab) {
         margin: 0;
     }
+}
+
+.contacts__button-icon {
+    fill: currentColor;
 }
 
 
