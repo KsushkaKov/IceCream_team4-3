@@ -55,7 +55,10 @@
       </li>
     </ul>
     <div class="contacts__buttons-wrap">
-      <button class="contacts__button contacts__button--yellow">
+      <button
+        class="contacts__button contacts__button--yellow"
+        data-modal-open-map
+      >
         Our Locations
         <svg class="contacts__button-icon" width="12" height="12">
           <use href="./images/icons.svg#icon-button-arrow"></use>
@@ -67,6 +70,41 @@
           <use href="./images/icons.svg#icon-button-arrow"></use>
         </svg>
       </button>
+    </div>
+  </div>
+
+  <div class="backdrop-map is-hidden-map" data-modal-map>
+    <div class="map-modal">
+      <button
+        type="button"
+        class="map-modal__cross-button"
+        data-modal-close-map
+      >
+        <svg class="map-modal__cross" width="20" height="20">
+          <use href="./images/header.svg#icon-closeblack"></use>
+        </svg>
+      </button>
+
+      <h2 class="map-modal__title">Our Locations</h2>
+      <div class="map-modal__map-wrap">
+        <iframe
+          class="map-modal__map"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2978.7931196161358!2d-87.78192918460375!3d41.70340157923637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1665607261872!5m2!1suk!2sua"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <a
+        class="map-modal__link"
+        href="https://goo.gl/maps/nSMFFiw8Km7gKCFX7"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Open map</a
+      >
     </div>
   </div>
 </section>

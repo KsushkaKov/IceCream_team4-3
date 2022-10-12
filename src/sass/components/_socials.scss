@@ -22,10 +22,21 @@
         height: 34px;
     }
 
+    transition: transform 500ms;
+
+    &:hover {
+        transform: scale(0.94);
+    }
+
+    &:focus {
+        transform: scale(1.03);
+    }
+
 }
 
 .socials__icon {
     fill: $backgroundColor;
+    transition: fill $timeDuration;
 
     .socials__link:hover &,
     .socials__link:focus & {
