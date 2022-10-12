@@ -12,6 +12,7 @@
     refs.modal.classList.toggle('backdrop-products--is-hidden');
   }
 })();
+
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[data-modal-icecoffee-open]'),

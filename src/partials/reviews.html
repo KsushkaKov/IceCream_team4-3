@@ -1,39 +1,66 @@
-<section class="customer-reviews section">
-  <div class="container">
-    <img class="customer-reviews__image" src="./images/reviews/customer-1.jpg" alt="Emily" />
-    <p class="customer-reviews__comment">
-      I love visiting your cafe. You prepare the most delicious ice cream in Los
-      Angeles! In addition, you have beautiful serving, cozy atmosphere and
-      polite staff.
-    </p>
-    <p class="customer-reviews__info">Emily, Los Angeles</p>
-    <input type="text" />
+<section class="customer-reviews" id="customer-reviews">
 
-    <ul class="customer-reviews__radio-list">
-      <li>
-        <input
-          class="customer-reviews__radio"
-          type="radio"
-          name="comment"
-          id=""
-        />
-      </li>
-      <li>
-        <input
-          class="customer-reviews__radio"
-          type="radio"
-          name="comment"
-          id=""
-        />
-      </li>
-      <li>
-        <input
-          class="customer-reviews__radio"
-          type="radio"
-          name="comment"
-          id=""
-        />
-      </li>
-    </ul>
+  <div class="gallery__container container">
+    <h2 class="visually-hidden">Gallery</h2>
+    <div class="gallery__swiper swiper swiper-galery">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <h2 class="visually-hidden">Customer reviews</h2>
+  <div class="container">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <picture>
+            <source srcset="./images/reviews/customer-1@1x.png 1x, ./images/reviews/customer-1@2x.png 2x" />
+            <img src="./images/reviews/customer-1@1x.png" alt="Emily" class="customer-reviews__image" />
+          </picture>
+          <div class="customer-reviews__wrapper">
+            <p class="customer-reviews__description">I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles! In addition, you have beautiful serving, cozy atmosphere and polite staff.</p>
+          </div>
+          <p class="customer-reviews__author">Emily, Los Angeles</p>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source srcset="./images/reviews/customer-2@1x.png 1x, ./images/reviews/customer-2@2x.png 2x" />
+            <img src="./images/reviews/customer-2@1x.png" alt="Sam" class="customer-reviews__image" />
+          </picture>
+          <div class="customer-reviews__wrapper">
+            <p class="customer-reviews__description">I love eating popsicles on a hot day. Yours is always delicious. I recommend your cafe to everyone I know.</p>
+          </div>
+          <p class="customer-reviews__author">Sam, Los Angeles</p>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source srcset="./images/reviews/customer-3@1x.png 1x, ./images/reviews/customer-3@2x.png 2x" />
+            <img src="./images/reviews/customer-3@1x.png" alt="Diana" class="customer-reviews__image" />
+          </picture>
+          <div class="customer-reviews__wrapper">
+            <p class="customer-reviews__description">Ice cream is my passion! I love your chocolate hazelnut ice cream! And I really like the excellent service - always served politely and quickly!</p>
+          </div>
+          <p class="customer-reviews__author">Diana, Chicago</p>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source srcset="./images/reviews/customer-4@1x.png 1x, ./images/reviews/customer-4@2x.png 2x" />
+            <img src="./images/reviews/customer-4@1x.png" alt="Bryan" class="customer-reviews__image" />
+          </picture>
+          <div class="customer-reviews__wrapper">
+            <p class="customer-reviews__description">Every day we come to you with friends after classes in college. We love your ice cream and casual atmosphere!</p>
+          </div>
+          <p class="customer-reviews__author">Bryan, New-York</p>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <!-- <div class="swiper-button-prev"></div> -->
+    <!-- <div class="swiper-button-next"></div> -->
   </div>
 </section>

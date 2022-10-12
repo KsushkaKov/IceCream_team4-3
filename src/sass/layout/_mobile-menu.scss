@@ -25,7 +25,7 @@
   width: 100vw;
   height: 100vh;
   background-color: $backgroundColor;
-  z-index: 999;
+  z-index: 500;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -60,7 +60,7 @@
   padding: 0;
   justify-content: center;
   align-items: center;
-  fill: currentColor;
+  fill: $mainColorText;
   background-color: $backgroundColor;
   @media screen and (min-width: 768px) {
     right: 32px;
@@ -81,6 +81,10 @@
   font-size: 32px;
   line-height: 1.2;
   color: $mainColorText;
+  &:hover,
+  &:focus {
+    color: $secondaryColorText;
+  }
   @media screen and (min-width: 768px) {
     font-size: 48px;
   }
@@ -104,4 +108,12 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+  &:hover {
+    background-color: $btnFocusColor
+  }
+  &:focus {
+    color: $mainColorText;
+    background-color: $btnFocusColor;
+    fill: currentColor;
+  } 
 }

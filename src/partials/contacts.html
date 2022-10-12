@@ -1,6 +1,6 @@
 <section class="contacts">
-  <div class="container">
-    <h2 class="contacts__title">Contacts</h2>
+  <div class="container contacts__container" id="contact">
+    <h2 class="contacts__title visually-hidden">Contacts</h2>
     <ul class="contacts__card-list">
       <li class="contacts__card">
         <p class="contacts__cafe-type">CAFE</p>
@@ -12,8 +12,12 @@
         <p class="contacts__working-hours">06:00 AM - 10:00 PM</p>
         <p class="contacts__working-days">Saturday - Sunday</p>
         <p class="contacts__working-hours">08:00 AM - 16:00 PM</p>
-        <a class="contacts__link" href="">+61(0) 383 766 284</a>
-        <a class="contacts__link" href="">noreply@envato.com</a>
+        <a class="contacts__link contacts__tel-link" href="tel:+610383766284"
+          >+61(0) 383 766 284</a
+        >
+        <a class="contacts__link" href="mailto:noreply@envato.com"
+          >noreply@envato.com</a
+        >
       </li>
       <li class="contacts__card">
         <p class="contacts__cafe-type">FOOD TRUCK</p>
@@ -25,8 +29,12 @@
         <p class="contacts__working-hours">06:00 AM - 10:00 PM</p>
         <p class="contacts__working-days">Saturday - Sunday</p>
         <p class="contacts__working-hours">08:00 AM - 16:00 PM</p>
-        <a class="contacts__link" href="">+61(0) 383 766 284</a>
-        <a class="contacts__link" href="">noreply@envato.com</a>
+        <a class="contacts__link contacts__tel-link" href="tel:+610383766284"
+          >+61(0) 383 766 284</a
+        >
+        <a class="contacts__link" href="mailto:noreply@envato.com"
+          >noreply@envato.com</a
+        >
       </li>
       <li class="contacts__card">
         <p class="contacts__cafe-type">CAFE</p>
@@ -38,23 +46,27 @@
         <p class="contacts__working-hours">06:00 AM - 10:00 PM</p>
         <p class="contacts__working-days">Saturday - Sunday</p>
         <p class="contacts__working-hours">08:00 AM - 16:00 PM</p>
-        <a class="contacts__link" href="">+61(0) 383 766 284</a>
-        <a class="contacts__link" href="">noreply@envato.com</a>
+        <a class="contacts__link contacts__tel-link" href="tel:+610383766284"
+          >+61(0) 383 766 284</a
+        >
+        <a class="contacts__link" href="mailto:noreply@envato.com"
+          >noreply@envato.com</a
+        >
       </li>
     </ul>
-  </div>
-  <div>
-    <button class="contacts__button">
-      Our Locations
-      <svg class="contacts__button-icon" width="12" height="12">
-        <use href="./images/icons.svg#icon-button-arrow"></use>
-      </svg>
-    </button>
-    <button class="contacts__button">
-      Franchise
-      <svg class="contacts__button-icon" width="12" height="12">
-        <use href="./images/icons.svg#icon-button-arrow"></use>
-      </svg>
-    </button>
+    <div class="contacts__buttons-wrap">
+      <button class="contacts__button contacts__button--yellow">
+        Our Locations
+        <svg class="contacts__button-icon" width="12" height="12">
+          <use href="./images/icons.svg#icon-button-arrow"></use>
+        </svg>
+      </button>
+      <button class="contacts__button">
+        Franchise
+        <svg class="contacts__button-icon" width="12" height="12">
+          <use href="./images/icons.svg#icon-button-arrow"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </section>
