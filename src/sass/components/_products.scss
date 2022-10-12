@@ -405,17 +405,10 @@
   transition: fill $timeDuration;
 
   &:hover {
-    fill: $acentColor;
-    width: 100px;
+    width: 50px;
   }
 
   &:focus {
     transform: scale(1, 1.2);
-  }
-
-  &--icecoffee {
-    &:hover {
-      fill: $btnFocusColor;
-    }
   }
 }

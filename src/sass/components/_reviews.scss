@@ -1,6 +1,8 @@
 .customer-reviews {
   padding-bottom: 394px;
   // max-width: 1200px;
+  overflow-x: hidden;
+  overflow-y: hidden;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -28,61 +30,147 @@
 }
 
 
-.gallery {
-  max-width: 100%;
-  background-image: linear-gradient(
-    to bottom,
-    $backgroundColor 24px,
-    rgba(245, 245, 245, 0.01) 24px
-  );
-  @media screen and (min-width: 768px) {
-    background-image: linear-gradient(
-      to bottom,
-      $backgroundColor 164px,
-      rgba(245, 245, 245, 0.01) 164px
-    );
-  }
-  @media screen and (min-width: 1200px) {
-    background-image: linear-gradient(
-      to bottom,
-      $backgroundColor 94px,
-      rgba(245, 255, 255, 0.01) 94px
-    );
-  }
-}
 
-.gallery__img {
-  margin: 0 auto;
+.gallery__slider {
   width: 100%;
-  height: auto;
-  border-radius: 8px;
-  @media screen and (min-width: 480px) {
-    border-radius: 18px;
-  }
-  @media screen and (min-width: 1200px) {
-    border-radius: 24px;
-  }
-}
+  background: linear-gradient(
+    $backgroundColor 22.3%,
+    rgba(255, 255, 255, 0.016) 22.3%
+  );
 
-.swiper-galery.swiper-container {
-  width: calc(100vw - 40px);
-  height: 100%;
-  border-radius: 8px;
-
-  @media screen and (min-width: 480px) {
-    width: 100%;
-    border-radius: 18px;
-  }
   @media screen and (min-width: 768px) {
-    width: 704px;
-    height: 327px;
+    background: linear-gradient(
+      $backgroundColor 50%,
+      rgba(255, 255, 255, 0.016) 50%
+    );
   }
+
   @media screen and (min-width: 1200px) {
-    width: 1013px;
-    height: 422px;
+    background: linear-gradient(
+      $backgroundColor 25%,
+      rgba(255, 255, 255, 0.016) 25%
+    );
+  }
+
+}
+
+// .gallery__photos-ice-creams {
+//   width: 100%;
+//   margin-left: auto;
+//   margin-right: auto;
+//   max-width: 1013px;
+
+//   @media screen and (min-width: 320px) {
+//     min-width: 279px;
+//   }
+//   outline: 1px solid red;
+// }
+
+// .gallery__container {
+//   width: 100%;
+//   padding-left: 20px;
+//   padding-right: 20px;
+//   margin: 0 auto;
+
+//   @media screen and (min-width: 480px) {
+//     width: 279px;
+//     height: 130px;
+//   }
+
+//   @media screen and (min-width: 768px) {
+//     width: 704px;
+//     height: 327px;
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     width: 1013px;
+//     height: 422px;
+//   }
+//   outline: 1px solid red;
+// }
+
+.photo-1,
+.photo-2,
+.photo-3 {
+  border-radius: 11px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    border-radius: 19px;
+    margin-left: auto;
+  margin-right: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    border-radius: 18px;
+    margin-left: auto;
+  margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
     border-radius: 24px;
+    margin-left: auto;
+  margin-right: auto;
   }
 }
+
+// .swiper.gallery__slider {
+//   padding-top: 0px;
+//   margin-bottom: 0px;
+// }
+
+
+// .gallery {
+//   max-width: 100%;
+//   background-image: linear-gradient(
+//     to bottom,
+//     $backgroundColor 24px,
+//     rgba(245, 245, 245, 0.01) 24px
+//   );
+//   @media screen and (min-width: 768px) {
+//     background-image: linear-gradient(
+//       to bottom,
+//       $backgroundColor 164px,
+//       rgba(245, 245, 245, 0.01) 164px
+//     );
+//   }
+//   @media screen and (min-width: 1200px) {
+//     background-image: linear-gradient(
+//       to bottom,
+//       $backgroundColor 94px,
+//       rgba(245, 255, 255, 0.01) 94px
+//     );
+//   }
+
+//   &__container {
+//   width: 279px;
+//   height: 130px;
+
+//   @media screen and (min-width: 768px) {
+//     width: 704px;
+//     height: 327px;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     width: 1013px;
+//     height: 422px;
+//   }
+//   outline: 1px solid red;
+// }
+// }
+
+// .gallery__img {
+//   margin: 0 auto;
+//   width: 100%;
+//   height: auto;
+//   border-radius: 8px;
+//   @media screen and (min-width: 480px) {
+//     border-radius: 18px;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     border-radius: 24px;
+//   }
+// }
 
 // .customer-reviews__image {
 //   margin-left: auto;
@@ -266,14 +354,14 @@
   }
 
   &__image {
-    margin: 210px auto 0;
+    margin: 80px auto 0;
 
     @media screen and (min-width: 768px) {
-      margin: 223px auto 0;
+      margin: 60px auto 0;
     }
 
     @media screen and (min-width: 1200px) {
-      margin: 424px auto 0;
+      margin: 128px auto 0;
     }
   }
 
