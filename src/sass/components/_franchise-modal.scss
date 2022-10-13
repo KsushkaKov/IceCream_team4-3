@@ -1,0 +1,194 @@
+.backdrop-franchise {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(10, 136, 23, 0.25);
+  opacity: 1;
+  transition: opacity 0.25s linear, visibility 0.25s linear;
+  z-index: 550;
+}
+
+.backdrop-franchise--is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+} 
+
+.modal-franchise {
+  position: absolute;
+  width: 290px; 
+  left: 50%;
+  top: 50%;
+  max-height: 100vh;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+  padding: 28px 18px 28px 28px;
+  background-color: $pureWhiteColor;
+  border: 2px solid $acentColor;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 1px rgb(0 0 0 / 14%),
+    0 2px 1px rgb(0 0 0 / 20%);
+  border-radius: 10px;
+  z-index: 555;
+
+  @media screen and (min-width: $tablet) {
+    width: 568px;
+    padding: 32px 47px 32px 57px;
+    margin-top: 0;
+  }
+}
+
+.franchise__modal-close-btn {
+  position: absolute;
+  top: 11px;
+  right: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: transparent;
+  cursor: pointer;
+  background-color: $pureWhiteColor;
+  transition: color 0.25s linear;
+
+  @media screen and (min-width: $tablet) {
+    top: 24px;
+    right: 24px;
+  }
+  &:hover {
+    fill: $acentColor;
+  }
+}
+.franchise__modal-close-btn__icon { 
+  fill: $secondaryColorText;
+}
+
+.modal-franchise__main-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: $secondaryColorText;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 24px;
+    width: 322;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.modal-franchise__description {
+  width: 100%;
+  margin-bottom: 24px;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  line-height: 1.4;
+
+  color: $secondaryColorText;
+
+  @include mq(tab) {
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: normal;
+
+  }
+}
+
+.modal-franchise__form {
+  width: 100%;
+}
+
+.modal-franchise__form-item {
+  margin: 0 auto;
+  min-width: 224px;
+  width: 100%;
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 368px;
+  }
+}
+.franchise-form__input {
+  display: block;
+  height: 32px;
+  padding-left: 12px;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  outline: transparent;
+  min-width: 224px;
+  width: 100%;
+  border: 1px solid $backgroundColor;
+  background-color: rgba(248, 210, 78, 0.1);
+  border-radius: 10px;
+  transition: border $timeDuration;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  color: $secondaryColorText;
+  &:hover,
+  &:focus {
+    border: 1px solid $acentColor;
+  }
+  @media screen and (min-width: $tablet) {
+    height: 42px;
+    width: 368px;
+    font-size: 14px;
+    padding-left: 16px;
+    padding-top: 11px;
+  }
+}
+
+.franchise-form__input--text {
+  min-width: 224px;
+  width: 100%;
+  height: 64px;
+  resize: none;
+  @media screen and (min-width: 768px) {
+    height: 84px;
+    width: 368px;
+  }
+}
+
+.modal-franchise__form-list {
+  width: 100% ;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+
+.franchise-form__button {
+  display: block;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 14px;  
+  line-height: 1.21;
+  cursor: pointer;
+  padding: 12px 34px;
+  color: $secondaryColorText;
+  background-color: $acentColor;
+  border-radius: 10px;
+  border: hidden;
+  transition: background-color $timeDuration, box-shadow $timeDuration;
+
+  &:hover,
+  &:focus {
+    color: $acentColor;
+    background: $btnFocusColor;
+  }
+}
