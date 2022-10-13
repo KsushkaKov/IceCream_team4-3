@@ -51,7 +51,7 @@
   height: 220px;
   margin-bottom: 20px;
   border-radius: 10px;
-
+  border: none;
   @include mq(tab) {
     margin-bottom: 32px;
     height: 250px;
