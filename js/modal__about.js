@@ -12,7 +12,7 @@
 
   function toggleModal() {
     refs.modal.classList.toggle("is-hidden-about");
-    iframeSrc = vid.src;
+    const iframeSrc = vid.src;
     vid.src = iframeSrc;
   }
 })();
