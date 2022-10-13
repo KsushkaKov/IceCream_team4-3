@@ -37,7 +37,7 @@
 }
 
 .header__item {
-  cursor: pointer;
+  cursor: url(../images/header/6.png), pointer;
 }
 
 .header__link {
@@ -51,7 +51,7 @@
     color: $mainColorText;
     position: relative;
     z-index: 4;
-    cursor: pointer;
+    cursor: url(../images/header/6.png), pointer;
     &:hover,
     &:focus {
         color: $acentColor;
@@ -72,6 +72,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: url(../images/header/6.png), pointer;
 
   @media screen and (max-width: 767px) {
     display: none;
