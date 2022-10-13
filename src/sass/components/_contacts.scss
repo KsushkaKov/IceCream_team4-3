@@ -96,6 +96,10 @@
     line-height: 1.83;
     letter-spacing: 0.04em;
     color: $thirdCardColor;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .contacts__address-part {

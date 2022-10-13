@@ -64,7 +64,7 @@
           <use href="./images/icons.svg#icon-button-arrow"></use>
         </svg>
       </button>
-      <button class="contacts__button">
+      <button class="contacts__button" data-modal-franchise-open>
         Franchise
         <svg class="contacts__button-icon" width="12" height="12">
           <use href="./images/icons.svg#icon-button-arrow"></use>
@@ -105,6 +105,77 @@
         rel="noopener noreferrer"
         >Open map</a
       >
+    </div>
+  </div>
+
+  <div
+    class="backdrop-franchise backdrop-franchise--is-hidden"
+    data-modal-franchise
+  >
+    <div class="modal-franchise">
+      <button
+        class="franchise__modal-close-btn"
+        type="button"
+        data-modal-franchise-close
+      >
+        <svg class="franchise__modal-close-btn__icon" width="11" height="11">
+          <use href="./images/header.svg#icon-closeblack"></use>
+        </svg>
+      </button>
+      <h2 class="modal-franchise__main-title">
+        Thank you for your interest in owning an Ice Cream shop
+      </h2>
+      <p class="modal-franchise__description">
+        Due to the overwhelming volume of franchise requests we are not
+        accepting new franchisee applications at this time. Once the application
+        process resumes, we will contact you for further information. Please
+        fill out the contact information below and we will reach out for
+        additional information. We appreciate your patience.
+      </p>
+      <form action="URL" class="modal-franchise__form">
+        <ul class="modal-franchise__form-list">
+          <li class="modal-franchise__form-item">
+            <label for="franchise__name" class="form__label"></label>
+            <input
+              type="text"
+              class="franchise-form__input"
+              name="name"
+              id="franchise__name"
+              placeholder="Name"
+            />
+          </li>
+          <li class="modal-franchise__form-item">
+            <label for="franchise__phone" class="form__label"></label>
+            <input
+              type="tel"
+              class="franchise-form__input"
+              name="phone"
+              id="franchise__phone"
+              placeholder="Phone"
+            />
+          </li>
+          <li class="modal-franchise__form-item">
+            <label for="franchise__email" class="form__label"></label>
+            <input
+              type="email"
+              class="franchise-form__input"
+              name="email"
+              id="franchise__email"
+              placeholder="Email"
+            />
+          </li>
+          <li class="modal-franchise__form-item">
+            <label for="franchise__text" class="form__label"></label>
+            <textarea
+              name="text"
+              id="franchise__text"
+              placeholder="Comment"
+              class="franchise-form__input franchise-form__input--text"
+            ></textarea>
+          </li>
+        </ul>
+        <button class="franchise-form__button" type="button">Submit</button>
+      </form>
     </div>
   </div>
 </section>
