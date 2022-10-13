@@ -5,12 +5,12 @@
 
     @include mq(tab) {
         padding-top: 48px;
-        padding-bottom: 204px;
+        padding-bottom: 40px;
     }
 
     @include mq(desk) {
         padding-top: 60px;
-        padding-bottom: 180px;
+        padding-bottom: 86px;
     }
 
 }
@@ -130,7 +130,7 @@
 }
 
 .advantages__item-title {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -163,6 +163,11 @@
 
     margin-top: 0;
     margin-bottom: 0;
+
+    @include mq(mob-only) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 
     @include mq(tab) {
         font-weight: 400;
