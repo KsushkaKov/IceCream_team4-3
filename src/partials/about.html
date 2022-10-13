@@ -1,57 +1,71 @@
 <section class="about" id="howmade">
-    <div class="container about__container">
-        <p class="about__label">tradition and love</p>
-        <h2 class="about__title">how it’s made?</h2>
+  <div class="container about__container">
+    <p class="about__label">tradition and love</p>
+    <h2 class="about__title">how it’s made?</h2>
 
-        <div class="about__list-wrap">
-            <ul class="about__list">
-                <li>
-                    <p class="about__item about__first-item">Ice is a place where you will become not only a little
-                        happier, but also healthier. Health is the main value for us, and
-                        we follow it when creating our handmade desserts.</p>
-                </li>
-                <li>
-                    <p class="about__item about__second-item">We use traditional recipes and 100% natural ingredients.
-                        Our products are so natural that they can be given to children
-                        from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee
-                        and 23 milkshakes.
-                    </p>
-                </li>
-                <li>
-                    <p class="about__item about__last-item">This is enough to choose ice cream and coffee for any mood!
-                    </p>
-                </li>
-            </ul>
-            <button type="button" class="about__button button" data-modal-open-about>Read more <svg class="about__icon"
-                    width="5" height="9">
-                    <use href="./images/header.svg#icon-inbutton"></use>
-                </svg>
-            </button>
-        </div>
+    <div class="about__list-wrap">
+      <ul class="about__list">
+        <li>
+          <p class="about__item about__first-item">
+            Ice is a place where you will become not only a little happier, but
+            also healthier. Health is the main value for us, and we follow it
+            when creating our handmade desserts.
+          </p>
+        </li>
+        <li>
+          <p class="about__item about__second-item">
+            We use traditional recipes and 100% natural ingredients. Our
+            products are so natural that they can be given to children from the
+            age of three years. Sweets lovers can expect 55 types of ice cream,
+            15 types of coffee and 23 milkshakes.
+          </p>
+        </li>
+        <li>
+          <p class="about__item about__last-item">
+            This is enough to choose ice cream and coffee for any mood!
+          </p>
+        </li>
+      </ul>
+      <button type="button" class="about__button button" data-modal-open-about>
+        Read more
+        <svg class="about__icon" width="5" height="9">
+          <use href="./images/header.svg#icon-inbutton"></use>
+        </svg>
+      </button>
     </div>
+  </div>
 </section>
 
 <div class="backdrop-about is-hidden-about" data-modal-about>
-    <div class="about-modal">
-        <button type="button" class="about-modal__cross-button" data-modal-close-about>
-            <svg class="about-modal__cross" width="20" height="20">
-                <use href="./images/header.svg#icon-closeblack"></use>
-            </svg>
-        </button>
+  <div class="about-modal">
+    <button
+      type="button"
+      class="about-modal__cross-button"
+      data-modal-close-about
+    >
+      <svg class="about-modal__cross" width="20" height="20">
+        <use href="./images/header.svg#icon-closeblack"></use>
+      </svg>
+    </button>
 
-        <h3 class="about-modal__title">How it’s made?</h3>
-        <div class="iframe__wrap">
-            <iframe class="about__frame" width="450" src="https://www.youtube.com/embed/hO-7cz7gyAY"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-
-        </div>
-
-        <p class="about-modal__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor
-            incididunt ut labore et Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+    <h3 class="about-modal__title">How it’s made?</h3>
+    <div class="iframe__wrap">
+      <iframe
+        id="vid"
+        class="about__frame"
+        width="450"
+        src="https://www.youtube.com/embed/ItjcmSIuWFI"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </div>
 
+    <p class="about-modal__description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+    </p>
+  </div>
 </div>

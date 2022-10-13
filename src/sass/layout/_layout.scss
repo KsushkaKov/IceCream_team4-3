@@ -15,6 +15,7 @@ body {
   font-size: 16px;
   letter-spacing: 0.03em;
   overflow-x: hidden;
+  cursor: url(../images/header/cursor.png), pointer;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -48,6 +49,7 @@ img {
 a {
   text-decoration: none;
   font-style: normal;
+  cursor: url(../images/header/3.png), pointer;
 }
 
 .visually-hidden {
