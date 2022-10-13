@@ -5,7 +5,7 @@
     modal: document.querySelector("[data-modal-about]"),
   };
  
-  const vid = document.getElementById('vid')
+  const vid = document.getElementById('vid');
 
   refs.openModalBtn.addEventListener("click", toggleModal);
   refs.closeModalBtn.addEventListener("click", toggleModal);
