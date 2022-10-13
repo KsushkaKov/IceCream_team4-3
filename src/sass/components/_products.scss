@@ -2,28 +2,13 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $pureWhiteColor;
-  background-image: url(../images/products/background-s-@1x.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url('../images/reviews/customers-background-1920.png');
+  background-size: contain;
+  background-position: 50%;
+  background-attachment: fixed;
 
   @include retina {
-    background-image: url(../images/products/background-s-@2x.png);
-  }
-
-  @media screen and (min-width: $tablet) {
-    background-image: url(..//images/products/background-m-@1x.png);
-
-    @include retina {
-      background-image: url(..//images/products/background-m-@2x.png);
-    }
-  }
-
-  @media screen and (min-width: $desktop) {
-    background-image: url(..//images/products/background-l-@1x.png);
-
-    @include retina {
-      background-image: url(..//images/products/background-l-@2x.png);
-    }
+    background-image: url('../images/reviews/customers-background-1920@2x.png');
   }
 }
 
@@ -273,6 +258,7 @@
         height: 196px;
         transform: translate(-50%, -170%);
         background-image: url(..//images/products/products_2m@1x.png);
+
         @include retina {
           background-image: url(..//images/products/products_2m@2x.png);
         }
@@ -283,6 +269,7 @@
         height: 300px;
         transform: translate(-50%, -152%);
         background-image: url(..//images/products/products_2l@1x.png);
+
         @include retina {
           background-image: url(..//images/products/products_2l@2x.png);
         }
@@ -312,6 +299,7 @@
         height: 196px;
         transform: translate(-50%, -170%);
         background-image: url(..//images/products/products_3m@1x.png);
+
         @include retina {
           background-image: url(..//images/products/products_3m@2x.png);
         }
@@ -322,6 +310,7 @@
         height: 300px;
         transform: translate(-50%, -152%);
         background-image: url(..//images/products/products_3l@1x.png);
+
         @include retina {
           background-image: url(..//images/products/products_3l@2x.png);
         }
